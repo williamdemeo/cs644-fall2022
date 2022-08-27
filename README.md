@@ -20,7 +20,7 @@ Ref. [NJIT Graduate Computing Sciences Course Catalog][]
 
 ### Books
 
-Please see the [CS 644 Books](books/README.md).
+Please see the [CS 644 Books](books/README.md) page.
 
 
 ### Popular press articles
