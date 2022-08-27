@@ -14,7 +14,11 @@ The rest of this page contains more information about these books, as well as ot
 
 ### General Big Data Books
 
-#### [The Art of Immutable Architecture][]
+#### [The Art of Immutable Architecture][]https://amzn.to/3QXwWaD
+
+<a href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+
 
 **Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]
 **Author**. Michael L. Perry
@@ -22,19 +26,24 @@ The rest of this page contains more information about these books, as well as ot
 **ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
 <!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
 
+
+
+
+
 -----------------------------
 
 ### Spark Books
 
 #### [Learning Spark, 2nd ed][]
 
-**Title**. [Learning Spark, 2nd ed][] (free from [Databricks][])
+**Title**. [Learning Spark: Lightning-Fast Data Analytics][] (free from [Databricks][])
+**Edition**. 2nd
 **Authors**. Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee  
 **Year**. 2020  
 **Publisher**. [Orally Media, Inc.](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/)  
 **ISBN**. 9781492050049
 
-If you want a hard copy, you can [buy Learning Spark, 2nd ed from Amazon][], often at a steep discount (about $35).
+If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
 
 <a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1492050040" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
@@ -61,7 +70,8 @@ Topics covered include
 
 #### [Functional Programming in Scala, 2nd ed][]
 
-**Title**. [Functional Programming in Scala, 2nd ed][]  
+**Title**. [Functional Programming in Scala][]  
+**Edition**. 2nd
 **Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
 **Release date**. Early 2023 (estimated)  
 **ISBN**. 9781617299582
@@ -77,16 +87,17 @@ The source code that accompanies [FP in Scala][] is available in [this zip archi
 
 **Title**. [The Science of Functional Programming](https://leanpub.com/sofp)  
 **Author**. Sergei Winitzki  
-**Year**. 2022  
+**Year**. 2021  
 **ISBN**. 9780359768776  
 **Source code**. [github.com/winitzki/sofp](https://github.com/winitzki/sofp)  
 **Description**. This book is a pedagogical in-depth tutorial and reference on the functional programming paradigm. Starting from issues found in practical coding, the book builds up the theoretical intuition, knowledge, and techniques that functional programmers use for for rigorous reasoning about types and code. The book's topics include working with collections; recursive functions and types; the Curry-Howard correspondence; laws, structural analysis, and code for functors, monads, and other typeclasses; techniques of symbolic derivation and proof; parametricity theorems; and free type constructions. Detailed explanations and derivations are accompanied by solved examples tested in the Scala interpreter, as well as exercises and discussions that further build upon each chapter's material. The difficulty of this book's mathematical material is at the level of high-school calculus.
 
 -----------
 
+[Apache Spark and Delta Lake Under the Hood]: https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood
 [Apache Spark]: https://spark.apache.org/
 
-[buy Learning Spark, 2nd ed from Amazon]: https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il
+[buy Learning Spark from Amazon]: https://amzn.to/3Rh5og8
 
 [Download and Install Scala]: https://www.scala-lang.org/download/
 [FP in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
@@ -97,41 +108,30 @@ The source code that accompanies [FP in Scala][] is available in [this zip archi
 [fpinscala]: https://github.com/fpinscala/fpinscala
 
 [free electronic copy of Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[free electronic copy of Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
 
+[Functional Programming in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 [Functional Programming in Scala, 2nd ed]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 
-[Learning Spark, 2nd ed]: https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il
+[Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+
+[Learning Spark: Lightning-Fast Data Analytics]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark: Lightning-Fast Data Analytics, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark publisher web page]: https://www.oreilly.com/library/view/learning-spark/9781449359034/
 
 [Manning web site]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 
-[Learning Spark publisher web page]: https://www.oreilly.com/library/view/learning-spark/9781449359034/
-[free electronic copy of Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Optimizing Databricks Workloads]: https://amzn.to/3PV5utr
 
 [Scala]: https://www.scala-lang.org/
-[source code accompanying the Red Book]: https://www.manning.com/downloads/2363
+[source code accompanying FP in Scala]: https://www.manning.com/downloads/2363
 [Spark]: https://spark.apache.org/
 
+[The Art of Immutable Architecture]: https://amzn.to/3QXwWaD
+[Scala Programming for Big Data Analytics]: https://amzn.to/3J8zekk
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Databricks]: https://www.databricks.com/
 
 
 <!-- [Scala Programming for Big Data Analytics][] -->
@@ -149,16 +149,6 @@ The source code that accompanies [FP in Scala][] is available in [this zip archi
 
 
 
-[Apache Spark and Delta Lake Under the Hood]: https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood
-[Optimizing Databricks Workloads]: https://amzn.to/3PV5utr
-[Scala Programming for Big Data Analytics]: https://amzn.to/3J8zekk
-
-[Databricks]: https://www.databricks.com/
-
-
-
-
-https://link.springer.com/book/10.1007/978-1-4842-4810-2
-https://www.amazon.com/Optimizing-Databricks-Workloads-performance-workloads/dp/1801819076
-https://www.amazon.com/Distributed-Data-Systems-Azure-Databricks/dp/183864721X
-[Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+<!-- https://link.springer.com/book/10.1007/978-1-4842-4810-2 -->
+<!-- https://www.amazon.com/Optimizing-Databricks-Workloads-performance-workloads/dp/1801819076 -->
+<!-- https://www.amazon.com/Distributed-Data-Systems-Azure-Databricks/dp/183864721X -->
