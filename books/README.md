@@ -1,5 +1,10 @@
 ## Books
 
+<!-- [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/) -->
+<!-- [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/) -->
+<!-- ![figure description](imageFile.png){width=250} -->
+
+
 We will rely primarily on three books in this section of the Introduction to Big Data course.
 
 1. [The Art of Immutable Architecture][]
@@ -12,16 +17,7 @@ The rest of this page contains more information about these books, as well as ot
 
 --------------------
 
-### General Big Data Books
-
-#### [The Art of Immutable Architecture][]
-
-
 <a target="_blank" href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
-
-<!-- <img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
-<!-- <a href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
-
 
 
 **Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]  
@@ -34,9 +30,6 @@ The rest of this page contains more information about these books, as well as ot
 
 -----------------------------
 
-### Spark Books
-
-
 <a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
 
 **Title**. [Learning Spark: Lightning-Fast Data Analytics][] (free from [Databricks][])  
@@ -48,10 +41,9 @@ The rest of this page contains more information about these books, as well as ot
 
 If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
 
-<!-- <img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1492050040" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
-
-
 <a target="_blank" href="https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood"><img border="0" src="https://www.databricks.com/wp-content/uploads/2020/07/under-thehood-with-dl-cover-min.jpg"></a>
+
+-------------------------------------
 
 **Title**. [Apache Spark and Delta Lake Under the Hood][] (free from [Databricks][])   
 **Author**. [Databricks][]  
@@ -69,9 +61,9 @@ Topics covered include
 
 ------------------------------------
 
-### Scala Books
+<!-- <a target="_blank" href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img border="0" src="https://images.manning.com/360/480/resize/book/4/156da28-8fb7-4015-bc02-986c2c4e0828/Pilquist-MEAP-HI.png"></a> -->
 
-<a target="_blank" href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img border="0" src="https://images.manning.com/360/480/resize/book/4/156da28-8fb7-4015-bc02-986c2c4e0828/Pilquist-MEAP-HI.png"></a>
+[![FP in Scala](../img/fpinscala.png)](https://www.manning.com/books/functional-programming-in-scala-second-edition)
 
 **Title**. [Functional Programming in Scala][]  
 **Edition**. 2nd
@@ -86,10 +78,11 @@ end up with the first edition, which does not cover Scala 3.
 
 The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
 
+-------------------------------
 
 
-<a target="_blank" href="https://leanpub.com/sofp"><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a>
-
+[![sofp](../img/sofp-cover.png)](https://leanpub.com/sofp)
+<!-- "><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a> -->
 
 
 **Title**. [The Science of Functional Programming](https://leanpub.com/sofp)  
