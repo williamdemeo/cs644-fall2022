@@ -1,8 +1,50 @@
-## Books
+## books
 
-### [Apache Spark and Delta Lake Under the Hood][] 
+Students are not required to purchase a textbook for this section of the Introduction to Big Data course.  However,
+there are a number of books that are helpful for learning the course material and we will refer to them throughout the semester.
+We list some of these books below, starting with the three books we will rely on the most.
 
-A free book from Databricks about getting started with core architecture and basic concepts.
+1. [The Art of Immutable Architecture][]
+2. [Learning Spark, 2nd ed][]
+3. [Functional Programming in Scala, 2nd ed][]
+
+The rest of this page contains more information about these books, as well as others that you might find useful to supplement your learning.
+
+--------------------
+
+### General Big Data Books
+
+#### [The Art of Immutable Architecture][]
+
+**Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]
+**Author**. Michael L. Perry
+**Year**. 2020
+**ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
+<!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
+
+-----------------------------
+
+### Spark Books
+
+#### [Learning Spark, 2nd ed][]
+
+**Title**. [Learning Spark, 2nd ed][] (free from [Databricks][])
+**Authors**. Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee  
+**Year**. 2020  
+**Publisher**. [Orally Media, Inc.](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/)  
+**ISBN**. 9781492050049
+
+If you want a hard copy, you can [buy Learning Spark, 2nd ed from Amazon][], often at a steep discount (about $35).
+
+<a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1492050040" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+
+#### [Apache Spark and Delta Lake Under the Hood][]
+
+**Title**. [Apache Spark and Delta Lake Under the Hood][] (free from [Databricks][])   
+**Author**. [Databricks][]  
+**Year**. 2022  
+**Description**. A free book from [Databricks][] about getting started with core architecture and basic concepts.
 
 Topics covered include
 
@@ -13,27 +55,95 @@ Topics covered include
 *  Load, update and roll back data in your data lake with Delta Lake.
 
 
---------------------
+------------------------------------
 
-### [Scala Programming for Big Data Analytics][]
+### Scala Books
+
+#### [Functional Programming in Scala, 2nd ed][]
+
+**Title**. [Functional Programming in Scala, 2nd ed][]  
+**Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
+**Release date**. Early 2023 (estimated)  
+**ISBN**. 9781617299582
+
+**Attention!** At the time of this writing, the 2nd edition of [FP in Scala][] is only
+available under the "Manning Early Access Program" (MEAP) from the [Manning web site][].
+You should **not** buy the book from Amazon just yet, as you may
+end up with the first edition, which does not cover Scala 3.
+
+The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
+
+-----------------------------------
+
+**Title**. [The Science of Functional Programming](https://leanpub.com/sofp)  
+**Author**. Sergei Winitzki  
+**Year**. 2022  
+**ISBN**. 9780359768776  
+**Source code**. [github.com/winitzki/sofp](https://github.com/winitzki/sofp)  
+**Description**. This book is a pedagogical in-depth tutorial and reference on the functional programming paradigm. Starting from issues found in practical coding, the book builds up the theoretical intuition, knowledge, and techniques that functional programmers use for for rigorous reasoning about types and code. The book's topics include working with collections; recursive functions and types; the Curry-Howard correspondence; laws, structural analysis, and code for functors, monads, and other typeclasses; techniques of symbolic derivation and proof; parametricity theorems; and free type constructions. Detailed explanations and derivations are accompanied by solved examples tested in the Scala interpreter, as well as exercises and discussions that further build upon each chapter's material. The difficulty of this book's mathematical material is at the level of high-school calculus.
+
+-----------
+
+[Apache Spark]: https://spark.apache.org/
+
+[buy Learning Spark, 2nd ed from Amazon]: https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il
+
+[Download and Install Scala]: https://www.scala-lang.org/download/
+[FP in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+
+[FP in Scala GitHub repository]: https://github.com/fpinscala/fpinscala
+
+[FP in Scala web page]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+[fpinscala]: https://github.com/fpinscala/fpinscala
+
+[free electronic copy of Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+
+[Functional Programming in Scala, 2nd ed]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+
+[Learning Spark, 2nd ed]: https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il
+
+[Manning web site]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+
+[Learning Spark publisher web page]: https://www.oreilly.com/library/view/learning-spark/9781449359034/
+[free electronic copy of Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+
+[Scala]: https://www.scala-lang.org/
+[source code accompanying the Red Book]: https://www.manning.com/downloads/2363
+[Spark]: https://spark.apache.org/
 
 
-Get Started With Big Data Analytics Using Apache Spark 1st ed. Edition
-
-<a href="https://www.amazon.com/Scala-Programming-Big-Data-Analytics/dp/1484248090?crid=12G0AEZCZFDZZ&keywords=Scala+Programming+for+Big+Data+Analytics&qid=1658620740&sprefix=scala+programming+for+big+data+analytics%2Caps%2C56&sr=8-1&linkCode=li1&tag=typefunc-20&linkId=29c97485530666ce213333cdfba1b0e8&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484248090&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li1&o=1&a=1484248090" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 
-------------------
 
-### [Optimizing Databricks Workloads][]
 
-*  **Title**. Optimizing Databricks Workloads
-*  **Subtitle**. Harness the power of Apache Spark in Azure and maximize the performance of modern big data workloads
-*  **Author**.  Anirudh Kala
-*  **Year**. 2021
-*  **Pages**. 230
 
-<a href="https://www.amazon.com/Optimizing-Databricks-Workloads-performance-workloads/dp/1801819076?&linkCode=li1&tag=typefunc-20&linkId=e214aff829ab785e9c69ab8c0676e603&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1801819076&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li1&o=1&a=1801819076" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- [Scala Programming for Big Data Analytics][] -->
+<!-- Get Started With Big Data Analytics Using Apache Spark 1st ed. Edition -->
+<!-- <a href="https://www.amazon.com/Scala-Programming-Big-Data-Analytics/dp/1484248090?crid=12G0AEZCZFDZZ&keywords=Scala+Programming+for+Big+Data+Analytics&qid=1658620740&sprefix=scala+programming+for+big+data+analytics%2Caps%2C56&sr=8-1&linkCode=li1&tag=typefunc-20&linkId=29c97485530666ce213333cdfba1b0e8&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484248090&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li1&o=1&a=1484248090" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
+<!-- [Optimizing Databricks Workloads][] -->
+<!-- *  **Title**. Optimizing Databricks Workloads -->
+<!-- *  **Subtitle**. Harness the power of Apache Spark in Azure and maximize the performance of modern big data workloads -->
+<!-- *  **Author**.  Anirudh Kala -->
+<!-- *  **Year**. 2021 -->
+<!-- *  **Pages**. 230 -->
+<!-- <a href="https://www.amazon.com/Optimizing-Databricks-Workloads-performance-workloads/dp/1801819076?&linkCode=li1&tag=typefunc-20&linkId=e214aff829ab785e9c69ab8c0676e603&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1801819076&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li1&o=1&a=1801819076" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
 
 
 
@@ -43,7 +153,7 @@ Get Started With Big Data Analytics Using Apache Spark 1st ed. Edition
 [Optimizing Databricks Workloads]: https://amzn.to/3PV5utr
 [Scala Programming for Big Data Analytics]: https://amzn.to/3J8zekk
 
-
+[Databricks]: https://www.databricks.com/
 
 
 
@@ -51,3 +161,4 @@ Get Started With Big Data Analytics Using Apache Spark 1st ed. Edition
 https://link.springer.com/book/10.1007/978-1-4842-4810-2
 https://www.amazon.com/Optimizing-Databricks-Workloads-performance-workloads/dp/1801819076
 https://www.amazon.com/Distributed-Data-Systems-Azure-Databricks/dp/183864721X
+[Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
