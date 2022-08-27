@@ -17,6 +17,10 @@ The rest of this page contains more information about these books, as well as ot
 
 --------------------
 
+### Primary References
+
+--------------------
+
 <a target="_blank" href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
 
 
@@ -62,12 +66,12 @@ end up with the first edition, which does not cover Scala 3.
 
 The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
 
----------------------------------------
+
 ------------------------------------
 
+### Secondary References
 
-### Other References
-
+------------------------------------
 
 <a href="https://leanpub.com/sofp"><img src="../img/sofp-cover.png" width="100"></a>
 <!-- "><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a> -->
