@@ -41,9 +41,11 @@ The rest of this page contains more information about these books, as well as ot
 
 If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
 
-<a target="_blank" href="https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood"><img border="0" src="https://www.databricks.com/wp-content/uploads/2020/07/under-thehood-with-dl-cover-min.jpg"></a>
-
 -------------------------------------
+
+<!-- <a target="_blank" href="https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood"><img border="0" src="https://www.databricks.com/wp-content/uploads/2020/07/under-thehood-with-dl-cover-min.jpg"></a> -->
+
+[![apache spark](../img/databricks.jpeg){width=250}](https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood)
 
 **Title**. [Apache Spark and Delta Lake Under the Hood][] (free from [Databricks][])   
 **Author**. [Databricks][]  
@@ -63,7 +65,7 @@ Topics covered include
 
 <!-- <a target="_blank" href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img border="0" src="https://images.manning.com/360/480/resize/book/4/156da28-8fb7-4015-bc02-986c2c4e0828/Pilquist-MEAP-HI.png"></a> -->
 
-[![FP in Scala](../img/fpinscala.png)](https://www.manning.com/books/functional-programming-in-scala-second-edition)
+[![FP in Scala](../img/fpinscala.png){width=250}](https://www.manning.com/books/functional-programming-in-scala-second-edition)
 
 **Title**. [Functional Programming in Scala][]  
 **Edition**. 2nd
@@ -81,7 +83,7 @@ The source code that accompanies [FP in Scala][] is available in [this zip archi
 -------------------------------
 
 
-[![sofp](../img/sofp-cover.png)](https://leanpub.com/sofp)
+[![sofp](../img/sofp-cover.png){width=250}](https://leanpub.com/sofp)
 <!-- "><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a> -->
 
 
