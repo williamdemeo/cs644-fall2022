@@ -24,7 +24,7 @@ The rest of this page contains more information about these books, as well as ot
 <a target="_blank" href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
 
 
-**Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]  
+**Title**. [The Art of Immutable Architecture: theory and practice of data management in distributed systems][]  
 **Edition**. 1st  
 **Author**. Michael L. Perry  
 **Year**. 2020  
@@ -38,7 +38,7 @@ The rest of this page contains more information about these books, as well as ot
 
 <a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
 
-**Title**. [Learning Spark: Lightning-Fast Data Analytics][] (free from [Databricks][])  
+**Title**. [Learning Spark: lightning-fast data analytics][] (free from [Databricks][])  
 **Edition**. 2nd  
 **Authors**. Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee  
 **Year**. 2020  
@@ -54,15 +54,15 @@ If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a 
 <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="../img/fpinscala.png" width="100"></a>
 
 **Title**. [Functional Programming in Scala][]  
-**Edition**. 2nd
+**Edition**. 2nd  
 **Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
 **Release date**. Early 2023 (estimated)  
 **ISBN**. 9781617299582
 
-**Attention!** At the time of this writing, the 2nd edition of [FP in Scala][] is only
-available under the "Manning Early Access Program" (MEAP) from the [Manning web site][].
-You should **not** buy the book from Amazon just yet, as you may
-end up with the first edition, which does not cover Scala 3.
+**Attention!** At the time of this writing, the 2nd edition of [FP in Scala][] (covering Scala 3) is only
+available via the "Manning Early Access Program" (MEAP) from the [Manning web site][].
+You should **not** buy this book from Amazon just yet, as you may
+end up with the 1st edition (covering Scala 2).
 
 The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
 
