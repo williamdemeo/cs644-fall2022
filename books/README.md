@@ -1,4 +1,4 @@
-## books
+## Books
 
 Students are not required to purchase a textbook for this section of the Introduction to Big Data course.  However,
 there are a number of books that are helpful for learning the course material and we will refer to them throughout the semester.
@@ -14,15 +14,15 @@ The rest of this page contains more information about these books, as well as ot
 
 ### General Big Data Books
 
-#### [The Art of Immutable Architecture][]https://amzn.to/3QXwWaD
+#### [The Art of Immutable Architecture][]
 
 <a href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 
 
-**Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]
-**Author**. Michael L. Perry
-**Year**. 2020
+**Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]  
+**Author**. Michael L. Perry  
+**Year**. 2020  
 **ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
 <!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
 
@@ -36,8 +36,8 @@ The rest of this page contains more information about these books, as well as ot
 
 #### [Learning Spark, 2nd ed][]
 
-**Title**. [Learning Spark: Lightning-Fast Data Analytics][] (free from [Databricks][])
-**Edition**. 2nd
+**Title**. [Learning Spark: Lightning-Fast Data Analytics][] (free from [Databricks][])  
+**Edition**. 2nd  
 **Authors**. Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee  
 **Year**. 2020  
 **Publisher**. [Orally Media, Inc.](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/)  
@@ -45,7 +45,9 @@ The rest of this page contains more information about these books, as well as ot
 
 If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
 
-<a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1492050040" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+<a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
+
+<!-- <img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1492050040" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
 
 
 #### [Apache Spark and Delta Lake Under the Hood][]
@@ -128,8 +130,11 @@ The source code that accompanies [FP in Scala][] is available in [this zip archi
 [source code accompanying FP in Scala]: https://www.manning.com/downloads/2363
 [Spark]: https://spark.apache.org/
 
-[The Art of Immutable Architecture]: https://amzn.to/3QXwWaD
 [Scala Programming for Big Data Analytics]: https://amzn.to/3J8zekk
+
+[The Art of Immutable Architecture]: https://amzn.to/3QXwWaD
+[The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems]: https://amzn.to/3QXwWaD
+
 
 [Databricks]: https://www.databricks.com/
 
