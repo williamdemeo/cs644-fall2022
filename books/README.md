@@ -1,12 +1,12 @@
 ## Books
 
-Students are not required to purchase a textbook for this section of the Introduction to Big Data course.  However,
-there are a number of books that are helpful for learning the course material and we will refer to them throughout the semester.
-We list some of these books below, starting with the three books we will rely on the most.
+We will rely primarily on three books in this section of the Introduction to Big Data course.
 
 1. [The Art of Immutable Architecture][]
 2. [Learning Spark, 2nd ed][]
 3. [Functional Programming in Scala, 2nd ed][]
+
+Students are not required to purchase hard copies of these books, but should at least have access to electronic versions of them.  Fortunately, a hard copy of the first book costs only about $35 on Amazon, and electronic copies of the other books are available for free.
 
 The rest of this page contains more information about these books, as well as others that you might find useful to supplement your learning.
 
@@ -16,7 +16,20 @@ The rest of this page contains more information about these books, as well as ot
 
 #### [The Art of Immutable Architecture][]
 
-<a href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<a target="_blank"  href="https://www.amazon.com/gp/product/0134610997/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0134610997&linkCode=as2&tag=typefunc-20&linkId=34b3f9acb98e99a2cf857ff78a454bb8"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0134610997&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL110_&tag=typefunc-20" ></a>
+
+[Artificial Intelligence: A Modern Approach, 4th Edition](https://www.amazon.com/gp/product/0134610997/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0134610997&linkCode=as2&tag=typefunc-20&linkId=7b927a65ec495610d347f7c2d096ef14) (AIMA)
+
+
+
+
+<a target="_blank" href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
+
+<!-- <img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
+
+
+<!-- <a href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a><img src="https://ir-na.amazon-adsystem.com/e/ir?t=typefunc-20&language=en_US&l=li2&o=1&a=1484259548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> -->
 
 
 
