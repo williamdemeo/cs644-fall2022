@@ -62,7 +62,25 @@ end up with the first edition, which does not cover Scala 3.
 
 The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
 
--------------------------------------
+---------------------------------------
+------------------------------------
+
+
+### Other References
+
+
+<a href="https://leanpub.com/sofp"><img src="../img/sofp-cover.png" width="100"></a>
+<!-- "><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a> -->
+
+
+**Title**. [The Science of Functional Programming](https://leanpub.com/sofp)  
+**Author**. Sergei Winitzki  
+**Year**. 2021  
+**ISBN**. 9780359768776  
+**Source code**. [github.com/winitzki/sofp](https://github.com/winitzki/sofp)  
+**Description**. This book is a pedagogical in-depth tutorial and reference on the functional programming paradigm. Starting from issues found in practical coding, the book builds up the theoretical intuition, knowledge, and techniques that functional programmers use for for rigorous reasoning about types and code. The book's topics include working with collections; recursive functions and types; the Curry-Howard correspondence; laws, structural analysis, and code for functors, monads, and other typeclasses; techniques of symbolic derivation and proof; parametricity theorems; and free type constructions. Detailed explanations and derivations are accompanied by solved examples tested in the Scala interpreter, as well as exercises and discussions that further build upon each chapter's material. The difficulty of this book's mathematical material is at the level of high-school calculus.
+
+-----------
 
 <!-- <a target="_blank" href="https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood"><img border="0" src="https://www.databricks.com/wp-content/uploads/2020/07/under-thehood-with-dl-cover-min.jpg"></a> -->
 
@@ -83,21 +101,7 @@ Topics covered include
 *  Load, update and roll back data in your data lake with Delta Lake.
 
 
--------------------------------
 
-
-<a href="https://leanpub.com/sofp"><img src="../img/sofp-cover.png" width="100"></a>
-<!-- "><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a> -->
-
-
-**Title**. [The Science of Functional Programming](https://leanpub.com/sofp)  
-**Author**. Sergei Winitzki  
-**Year**. 2021  
-**ISBN**. 9780359768776  
-**Source code**. [github.com/winitzki/sofp](https://github.com/winitzki/sofp)  
-**Description**. This book is a pedagogical in-depth tutorial and reference on the functional programming paradigm. Starting from issues found in practical coding, the book builds up the theoretical intuition, knowledge, and techniques that functional programmers use for for rigorous reasoning about types and code. The book's topics include working with collections; recursive functions and types; the Curry-Howard correspondence; laws, structural analysis, and code for functors, monads, and other typeclasses; techniques of symbolic derivation and proof; parametricity theorems; and free type constructions. Detailed explanations and derivations are accompanied by solved examples tested in the Scala interpreter, as well as exercises and discussions that further build upon each chapter's material. The difficulty of this book's mathematical material is at the level of high-school calculus.
-
------------
 
 [Apache Spark and Delta Lake Under the Hood]: https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood
 [Apache Spark]: https://spark.apache.org/
