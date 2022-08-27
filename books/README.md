@@ -11,7 +11,7 @@ We will rely primarily on three books in this section of the Introduction to Big
 2. [Learning Spark, 2nd ed][]
 3. [Functional Programming in Scala, 2nd ed][]
 
-Students are not required to purchase hard copies of these books, but should at least have access to electronic versions of them.  Fortunately, a hard copy of the first book costs only about $35 on Amazon, and electronic copies of the other books are available for free.
+Students are not required to purchase hard copies of these books, but should at least have access to electronic versions of them.  Fortunately, a hard copy of the first book costs only about $35 on Amazon; a pdf of the second book can be freely downloaded, and, at the time of this writing, the first 10 chapters of the third title can be accessed for free on the publisher's website.
 
 The rest of this page contains more information about these books, as well as others that you might find useful to supplement your learning.
 
