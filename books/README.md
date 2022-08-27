@@ -21,8 +21,10 @@ The rest of this page contains more information about these books, as well as ot
 
 
 **Title**. [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems][]  
+**Edition**. 1st  
 **Author**. Michael L. Perry  
 **Year**. 2020  
+**Publisher**. Apress  
 **ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
 <!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
 
@@ -36,17 +38,36 @@ The rest of this page contains more information about these books, as well as ot
 **Edition**. 2nd  
 **Authors**. Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee  
 **Year**. 2020  
-**Publisher**. [Orally Media, Inc.](https://www.oreilly.com/library/view/learning-spark-2nd/9781492050032/)  
+**Publisher**. O'Reilly  
 **ISBN**. 9781492050049
 
 If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
+
+------------------------------------
+
+<!-- <a target="_blank" href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img border="0" src="https://images.manning.com/360/480/resize/book/4/156da28-8fb7-4015-bc02-986c2c4e0828/Pilquist-MEAP-HI.png"></a> -->
+
+<a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="../img/fpinscala.png" width="150"></a>
+
+**Title**. [Functional Programming in Scala][]  
+**Edition**. 2nd
+**Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
+**Release date**. Early 2023 (estimated)  
+**ISBN**. 9781617299582
+
+**Attention!** At the time of this writing, the 2nd edition of [FP in Scala][] is only
+available under the "Manning Early Access Program" (MEAP) from the [Manning web site][].
+You should **not** buy the book from Amazon just yet, as you may
+end up with the first edition, which does not cover Scala 3.
+
+The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
 
 -------------------------------------
 
 <!-- <a target="_blank" href="https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood"><img border="0" src="https://www.databricks.com/wp-content/uploads/2020/07/under-thehood-with-dl-cover-min.jpg"></a> -->
 
 <a href="https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood">
-<img src="../img/databricks.jpeg" width="200"></a>
+<img src="../img/databricks.jpeg" width="150"></a>
 
 **Title**. [Apache Spark and Delta Lake Under the Hood][] (free from [Databricks][])   
 **Author**. [Databricks][]  
@@ -62,29 +83,10 @@ Topics covered include
 *  Load, update and roll back data in your data lake with Delta Lake.
 
 
-------------------------------------
-
-<!-- <a target="_blank" href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img border="0" src="https://images.manning.com/360/480/resize/book/4/156da28-8fb7-4015-bc02-986c2c4e0828/Pilquist-MEAP-HI.png"></a> -->
-
-<a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="../img/fpinscala.png" width="200"></a>
-
-**Title**. [Functional Programming in Scala][]  
-**Edition**. 2nd
-**Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
-**Release date**. Early 2023 (estimated)  
-**ISBN**. 9781617299582
-
-**Attention!** At the time of this writing, the 2nd edition of [FP in Scala][] is only
-available under the "Manning Early Access Program" (MEAP) from the [Manning web site][].
-You should **not** buy the book from Amazon just yet, as you may
-end up with the first edition, which does not cover Scala 3.
-
-The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
-
 -------------------------------
 
 
-<a href="https://leanpub.com/sofp"><img src="../img/sofp-cover.png" width="200"></a>
+<a href="https://leanpub.com/sofp"><img src="../img/sofp-cover.png" width="150"></a>
 <!-- "><img border="0" src="https://github.com/winitzki/sofp/raw/master/cover/book-draft-cover.png"></a> -->
 
 
