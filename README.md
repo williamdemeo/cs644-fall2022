@@ -130,9 +130,11 @@ In accordance with university policy, **the final exam must be taken by all stud
 
 Students are expected to have access to the following textbooks (electronic or hard copy---either is fine).
 
-+   <a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
++  [Learning Spark: lightning-fast data analytics][] (free from [Databricks][])  
 
-   **Title**. [Learning Spark: lightning-fast data analytics][] (free from [Databricks][])  
+
+   <a target="_blank" href="https://www.amazon.com/Learning-Spark-Jules-Damji/dp/1492050040?crid=3922OBOMC4O67&keywords=data+scala+spark&qid=1661105501&sprefix=data+scala+spark%2Caps%2C176&sr=8-11&linkCode=li2&tag=typefunc-20&linkId=420ae13a00412ebcd14e6222a8a1a564&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1492050040&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
+
    **Edition**. 2nd  
    **Authors**. Jules S. Damji, Brooke Wenig, Tathagata Das, Denny Lee  
    **Year**. 2020  
@@ -142,9 +144,10 @@ Students are expected to have access to the following textbooks (electronic or h
    If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
 
 
-+  <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="img/fpinscala.png" width="100"></a>
++  [Functional Programming in Scala][]  
 
-   **Title**. [Functional Programming in Scala][]  
+   <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="img/fpinscala.png" width="100"></a>
+
    **Edition**. 2nd  
    **Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
    **Release date**. Early 2023 (estimated)  
