@@ -97,7 +97,7 @@ Students are expected to have access to the following textbooks (electronic or h
    If you want a hard copy, you can [buy Learning Spark from Amazon][], often at a steep discount (about $35).
 
 
-+  <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="../img/fpinscala.png" width="100"></a>
++  <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="img/fpinscala.png" width="100"></a>
 
    **Title**. [Functional Programming in Scala][]  
    **Edition**. 2nd  
@@ -142,11 +142,50 @@ These are not required but might be helpful.
 
 
 [Apache Spark and Delta Lake Under the Hood]: https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood
-[Volume, velocity, and variety: Understanding the three V's of big data]: https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/
-[NJIT Graduate Computing Sciences Course Catalog]: https://catalog.njit.edu/graduate/computing-sciences/computer-science/#coursestext
+[Apache Spark]: https://spark.apache.org/
 
-[NJIT]: https://njit.edu
+[buy Learning Spark from Amazon]: https://amzn.to/3Rh5og8
+
+[CKB Room 124]: https://goo.gl/maps/PvJth6DXEvyuV1Ep6
+
+[Databricks]: https://www.databricks.com/
+[Download and Install Scala]: https://www.scala-lang.org/download/
+
 [ECEC]: https://goo.gl/maps/ZBW1fdPqii6frCJZ7
 [ECEC 100]: https://goo.gl/maps/ZBW1fdPqii6frCJZ7
 [ECEC Room 100]: https://goo.gl/maps/ZBW1fdPqii6frCJZ7
-[CKB Room 124]: https://goo.gl/maps/PvJth6DXEvyuV1Ep6
+
+
+
+[FP in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+[FP in Scala GitHub repository]: https://github.com/fpinscala/fpinscala
+[FP in Scala web page]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+[fpinscala]: https://github.com/fpinscala/fpinscala
+[free electronic copy of Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[free electronic copy of Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Functional Programming in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+[Functional Programming in Scala, 2nd ed]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+
+[Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark: Lightning-Fast Data Analytics]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark: Lightning-Fast Data Analytics, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
+[Learning Spark publisher web page]: https://www.oreilly.com/library/view/learning-spark/9781449359034/
+
+[Manning web site]: https://www.manning.com/books/functional-programming-in-scala-second-edition
+
+[NJIT]: https://njit.edu
+[NJIT Graduate Computing Sciences Course Catalog]: https://catalog.njit.edu/graduate/computing-sciences/computer-science/#coursestext
+
+[Optimizing Databricks Workloads]: https://amzn.to/3PV5utr
+
+[Scala]: https://www.scala-lang.org/
+[Scala Programming for Big Data Analytics]: https://amzn.to/3J8zekk
+[source code accompanying FP in Scala]: https://www.manning.com/downloads/2363
+[Spark]: https://spark.apache.org/
+
+[The Art of Immutable Architecture]: https://amzn.to/3QXwWaD
+[The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems]: https://link.springer.com/book/10.1007/978-1-4842-5955-9
+
+
+[Volume, velocity, and variety: Understanding the three V's of big data]: https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/
