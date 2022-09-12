@@ -14,12 +14,13 @@ This is the main web page for the course *CS 644, Introduction to Big Data* taug
 
 **Contents**
 
-- [What is this web page?](#what-is-this-web-page)
 - [What is the course about?](#what-is-the-course-about)
 - [When and where are the lectures?](#when-and-where-are-the-lectures)
 - [Who is the instructor?](#who-is-the-instructor)
 - [Am I qualified to take this course?](#am-i-qualified-to-take-this-course)
-- [Where is the course schedule/Canvas/homework page?](#where-is-the-course-schedulecanvashomework-page)
+- [Where is the course schedule?](#where-is-the-course-schedule)
+- [Where is the Canvas page for my section?](#where-is-the-canvas-page-for-my-section)
+- [Where is information about homework?](#where-is-information-about-homework)
 - [When and where are the exams?](#when-and-where-are-the-exams)
 - [What textbooks are required?](#what-textbooks-are-required)
 - [Do I have to attend all the lectures?](#do-i-have-to-attend-all-the-lectures)
@@ -33,6 +34,11 @@ This is the main web page for the course *CS 644, Introduction to Big Data* taug
 - [Is tutoring available?](#is-tutoring-available)
 - [Can I email the instructor?](#can-i-email-the-instructor)
 - [What if I have a disability?](#what-if-i-have-a-disability)
+
+<!-- markdown-toc end -->
+
+
+
 
 ---------
 
@@ -74,18 +80,23 @@ Students should have a had some prior computer programming experience.  Students
 
 ------------------
 
-## Where is the course schedule/Canvas/homework page?
+## Where is the course schedule?
 
-**Course Schedule**. 
 [github.com/williamdemeo/cs644-fall2022/schedule](https://github.com/williamdemeo/cs644-fall2022/tree/master/schedule)
 
-**Canvas web pages**.
+------------------
+
+## Where is the Canvas page for my section?
 
 + [§101 (Wednesday) Canvas](https://njit.instructure.com/courses/25281)
 + [§103 (Saturday AM) Canvas](https://njit.instructure.com/courses/25680)
 + [§105 (Saturday PM) Canvas](https://njit.instructure.com/courses/25681)
 
-**Homework page**.  The homework information page is at [github.com/williamdemeo/cs644-fall2022/homework](https://github.com/williamdemeo/cs644-fall2022/tree/master/homework).
+-------------
+
+## Where is information about homework?
+
+The homework information page is at [github.com/williamdemeo/cs644-fall2022/homework](https://github.com/williamdemeo/cs644-fall2022/tree/master/homework).
 
 The [Gradescope][] pages for this class are the following:
 
@@ -282,7 +293,7 @@ If you don't understand something, please ask!
 
 1. **In Lecture**. The best time/place to ask a question is during lecture or recitation or office hours.
 
-2. **On [Canvas](#canvas-web-pages)**. Another good place to ask a question is the online discussion forum.  The Canvas system is designed to provide help quickly and efficiently.  Rather than emailing questions to the teaching staff, students are encouraged to post questions on Canvas.
+2. **On [Canvas](#where-is-the-canvas-page-for-my-section)**. Another good place to ask a question is the online discussion forum.  The Canvas system is designed to provide help quickly and efficiently.  Rather than emailing questions to the teaching staff, students are encouraged to post questions on Canvas.
 
 3. **On [our Discord][]** (coming soon!)
 
