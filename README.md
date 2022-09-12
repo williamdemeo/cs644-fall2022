@@ -1,4 +1,4 @@
-# CS 644: Introduction to Big Data (§§101, 103, 105)
+# CS 644: Introduction to Big Data (Sections 101, 103, 105)
 
 ## NJIT Fall 2022
 
@@ -55,11 +55,21 @@ Students should have a had some prior computer programming experience.  Students
 **Course Schedule**. 
 [github.com/williamdemeo/cs644-fall2022/schedule](https://github.com/williamdemeo/cs644-fall2022/tree/master/schedule)
 
-**Canvass page**. TBA  
+**Canvas web pages**.
+
++ [§101 (Wednesday) Canvas](https://njit.instructure.com/courses/25281)
++ [§103 (Saturday AM) Canvas](https://njit.instructure.com/courses/25680)
++ [§105 (Saturday PM) Canvas](https://njit.instructure.com/courses/25681)
 
 **Homework page**.  The homework information page is at [github.com/williamdemeo/cs644-fall2022/homework](https://github.com/williamdemeo/cs644-fall2022/tree/master/homework).
 
-The [Gradescope][] page for this class is [here][]. 
+The [Gradescope][] pages for this class are the following:
+
++ [§101 (Wednesday) Gradescope](https://www.gradescope.com/courses/442300)   -- **Entry Code**. 7GX2YY
++ [§103 (Saturday AM) Gradescope](https://www.gradescope.com/courses/442301) -- **Entry Code**. ZZYVN7
++ [§105 (Saturday PM) Gradescope](https://www.gradescope.com/courses/442302) -- **Entry Code**. 4V2E8X
+
+
 
 --------------------------------------------------------------------
 
@@ -140,6 +150,160 @@ These are not required but might be helpful.
 
 
 
+-----------------------------------
+
+## Do I have to attend all the lectures?
+
+**Yes**. Students are expected to attend all classes. A grade penalty will be exacted if you have an excessive number of absences (whether excused or unexcused). Specifically, you are permitted (but strongly discouraged from taking) **five** absences in total, and you must <a href="mailto:williamdemeo@gmail.com?subject=cs-644-absence">email the instructor</a> if/when you miss a class. Each additional absence, and any absence not mentioned to the instructor, may result in the deduction of points from your final grade.
+
+Occasionally attendance will be recorded at the start of class.
+
+**Important**. If you plan to leave before class is over, the correct procedure is to mention this to the professor before the start of class. It is impolite and disruptive to your classmates to leave, or even pack up your belongings, before the lecture is over.
+
+---
+
+## What is expected of an NJIT student?
+
+Students must abide by [the university's code of conduct](https://www.njit.edu/dos/policies/conductcode/index.php).
+In particular, cheating is unacceptable and will not be tolerated. Violations of this policy will be dealt with in a manner consistent with university regulations, which range from a warning to expulsion from the university.
+
+---
+
+## Can I use electronic devices during lecture?
+
+**No**. Use of electronic devices in lecture for purposes unrelated to the course is not allowed.
+
+**However**, laptops or tablets may be used in the classroom *for work related to this course*.
+
+As a general rule, students should silence and refrain from using electronic devices, such as phones, ipods, microwave ovens, etc. in class. There is one exception to this rule: a laptop or tablet may be used for working on something related to the course material. 
+
+Tiktoking, Tweeting, Tindering, Facebooking, Instagramming, Snapchatting, Whatsapping, YouTubing, and gaming are not allowed.  Such activities make it hard, if not impossible, for the student to concentrate on the lecture and can also be very distracting to other students and the instructor.  Students who violate this policy may be asked to leave the classroom.
+
+---
+
+## What is the grading policy?
+
+The breakdown of the final course grade is as follows:  
+
++ Homework: 30 points total  
++ Projects: 40 points total  
++ Midterm exam: 10 points  
++ Final exam: 20 points  
+
+At the end of the semester, letter grades will be assigned roughly according to
+the following table. However, the scale may be shifted depending on overall student 
+performance.
+
++ A: 91--100  
++ B+: 86--90   
++ B: 81--85   
++ C+: 76--80  
++ C: 71--75   
++ D+: 66--70   
++ D: 60--65   
++ F:  0--59    
+
+
+-----------------------------------
+
+## Where can I find the homework?
+
+The written homework assignments will account for 30% of the course grade and will be due most weeks on Wednesday by 10:59pm, unless otherwise indicated.  See the tentative [course schedule](https://github.com/williamdemeo/cs644-fall2022/tree/master/schedule).
+
+The lowest (or missed) homework score will be dropped and not counted toward the final course grade.
+
+Descriptions of each homework assignment will be available in the homework directory of this repository.  You are strongly encouraged to start the homework early, so that you will have time to get help from the instructor or [a tutor](#tutoring-service) if you need it.
+
+-----------------------------------
+
+## Can I turn in assignments after the deadline?
+
+**No late homework will be accepted for any reason**.  If you fail
+to submit homework on time, this will not necessarily hurt
+your final course grade since the lowest homework score will be dropped.
+
+-------------------
+
+## Is it possible to make-up a missed exam?
+
+Generally speaking, there are no make-up exams. However, 
+if you must miss an exam for one of the legitimate reasons listed below,
+and if you contact the professor at least five days before the exam date,
+then you might be able to take a make-up exam *before the scheduled exam time*.
+
+To request a make-up exam, a student must provide documented evidence of
+one of the following:
+
++ Documented medical excuse - student's own medical emergency.
++ Documented medical excuse - a member of the student's family has a medical emergency.
++ Extra curricular activity sponsored University of Colorado.
++ Armed forces deployment (military duty).
++ Officially mandated court appearances, including jury duty.
++ A conflict with another exam or if you have three or more final exams on a
+  given day.  (In each case the exam with the fewest students must arrange the make-up exam.)
+
+If you miss an exam due to some unforeseen circumstance, you must contact the 
+professor within one class meeting after the missed test and provide an
+explanation. If your excuse is accepted, the missed test score may be replaced 
+with 80% of your final exam score. For example, if your excuse is accepted and
+you score a 90% on the final, then you will receive a 72% for the missed test
+(0.80*0.90 = 0.72).
+
+-----------------------------------------------------------
+
+## (How) Should I ask questions?
+
+Students are strongly encouraged to ask lots of questions.
+If you don't understand something, please ask!
+
+1. **In Lecture**. The best time/place to ask a question is during lecture or recitation or office hours.
+
+2. **On [Canvas](#canvas-web-pages)**. Another good place to ask a question is the online discussion forum.  The Canvas system is designed to provide help quickly and efficiently.  Rather than emailing questions to the teaching staff, students are encouraged to post questions on Canvas.
+
+3. **On [our Discord][]** (coming soon!)
+
+---------------------------------
+
+## Is tutoring available?
+
+"YWCC and its ACM student chapter have partnered to create an online tutoring program available to undergraduate and graduate students looking for tutoring assistance."
+
+See [computing.njit.edu/tutoring](https://computing.njit.edu/tutoring) for more information.
+
+The undergraduate tutoring schedule is available at [computing.njit.edu/undergraduate-tutoring-1](https://computing.njit.edu/undergraduate-tutoring-1)
+
+
+------------
+
+## Can I email the instructor?
+
+You may email the instructor directly, though the response time might be a slower than if you use one of the preferred methods described above.
+
+If you email the instructor, please use an informative subject field. Using 
+<a href="mailto:williamdemeo@gmail.com?subject=CS 644: (fill in subject here)&body=Dear Dr. DeMeo, (your message) Sincerely, (your full name)">this link</a> will populate your message fields with some of the 
+required information. If you do not at least indicate which class you are in, your email will be at risk of going unanswered.
+
+---------------------------------------------
+
+## What if I have a disability?
+
+If you believe that you have a disability that qualifies under the
+Americans with Disabilities Act and Section 504 of the Rehabilitation
+Act and requires accommodations, you should contact the [Office of Accessibility Resources and Services](https://www.njit.edu/studentsuccess/node/5) for information 
+on appropriate policies and procedures. 
+The next step is to talk to the instructor who will be happy to assist with 
+accommodations, but **will not provide them retroactively** 
+(so file the appropriate requests and paperwork well before the first exam!).
+
+Students must have their paper work in order and should contact the instructor 
+early in the semester in order to have their learning needs appropriately met. 
+
+
+[Lean]: https://leanprover.github.io/
+[KUPF]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+[KUPF 202]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+
+[Gradescope]: https://www.gradescope.com/courses/441050
 
 [Apache Spark and Delta Lake Under the Hood]: https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood
 [Apache Spark]: https://spark.apache.org/

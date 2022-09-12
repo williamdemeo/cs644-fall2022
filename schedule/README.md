@@ -10,20 +10,20 @@ Readings refer to the following:
 +  [FPS][] = [Functional Programming in Scala, 2nd edition](https://livebook.manning.com/book/functional-programming-in-scala-second-edition)
 
 
-| **Week** | **Date** | **Topic**                           | **Reading**              | **Homework**                             |
-|----------|----------|-------------------------------------|--------------------------|------------------------------------------|
-| **1**    | 7 Sep    | **Motivation**                      | [LS][] Ch1               |                                          |
-|          | 10 Sep   | Historical overview,                | [FPS Ch1][]              | [HW 1][] due Mon 19 Sep 23:59            |
-|          |          | programming paradigms.              | [FPS Ch2][]              | [Project 0][] due Mon 26 Sep 23:59       |
-| **2**    | 14 Sep   | **Introduction to Scala**           | [FPS Ch3][]              |                                          | 
-|          | 17 Sep   | Higher-order functions, functional  | [FPS Ch4][]              | [HW 2][] due Mon 26 Sep                  | 
-|          |          | data structures and recursion.      | [FPS Ch5][]              | [Project 1][] due Mon 3 Oct              |
-| **3**    | 21 Sep   | **Functional Programming in Scala** | [FPS Ch6][] (optional)   |                                          | 
-|          | 25 Sep   | The `Option[_]` functor, laziness   | [FPS Ch7][]              | [HW 3][] due Mon 3 Oct                   |
-|          |          | purely functional parallelism.      | [FPS Ch8][] (optional)   | [Project 2][] due Mon 10 Oct             |
-| **4**    | 28 Sep   | **Introduction to Spark**           | [LS][] Ch2               |                                          | 
-|          | 1 Oct    | Transformation, actions, RDDs,      | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |
-|          |          | Dataframes, Datasets, Spark SQL     | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |
+| **Week** | **Date** | **Topic**                                  | **Reading**              | **Homework**                             |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
+| **1**    | 7 Sep    | **Motivation**                             | [LS][] Ch1               |                                          |
+|          | 10 Sep   | Historical overview,                       | [FPS Ch1][]              | [HW 1][] due Mon 19 Sep 23:59            |
+|          |          | programming paradigms.                     | [FPS Ch2][]              | [Project 0][] due Mon 26 Sep 23:59       |
+| **2**    | 14 Sep   | **Introduction to Functional Programming** | [FPS Ch3][]              |                                          | 
+|          | 17 Sep   | Scala, higher-order functions,             | [FPS Ch4][]              | [HW 2][] due Mon 26 Sep                  | 
+|          |          |  functional data structures, recursion.    | [FPS Ch5][]              | [Project 1][] due Mon 3 Oct              |
+| **3**    | 21 Sep   | **Functional Programming in Scala**        | [FPS Ch6][] (optional)   |                                          | 
+|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due Mon 3 Oct                   |
+|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due Mon 10 Oct             |
+| **4**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          | 
+|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |
 
 
 ----------------------
@@ -58,6 +58,7 @@ Readings refer to the following:
 [final exams]: https://www5.njit.edu/registrar/exams/finalexams.php
 [KUPF]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
 
+[FPS]: https://livebook.manning.com/book/functional-programming-in-scala-second-edition/
 [FPS Ch1]: https://livebook.manning.com/book/functional-programming-in-scala-second-edition/chapter-1/v-6/
 [FPS Ch2]: https://livebook.manning.com/book/functional-programming-in-scala-second-edition/chapter-2/v-6/
 [FPS Ch3]: https://livebook.manning.com/book/functional-programming-in-scala-second-edition/chapter-3/v-6/
