@@ -28,11 +28,13 @@ The rest of this page contains more information about these books, as well as ot
 **Edition**. 1st  
 **Author**. Michael L. Perry  
 **Year**. 2020  
-**Publisher**. Apress  
+**Publisher**. Apress (Springer)  
 **ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
 <!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
 
+The official web page for the book is [link.springer.com/book/10.1007/978-1-4842-5955-9](https://link.springer.com/book/10.1007/978-1-4842-5955-9).
 
+You can order the book [directly from the publisher](https://link.springer.com/book/10.1007/978-1-4842-5955-9) or [from Amazon](https://amzn.to/3QXwWaD).
 
 -----------------------------
 
@@ -144,7 +146,7 @@ Topics covered include
 [Scala Programming for Big Data Analytics]: https://amzn.to/3J8zekk
 
 [The Art of Immutable Architecture]: https://amzn.to/3QXwWaD
-[The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems]: https://amzn.to/3QXwWaD
+[The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems]: https://link.springer.com/book/10.1007/978-1-4842-5955-9
 
 
 [Databricks]: https://www.databricks.com/
