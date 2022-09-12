@@ -185,7 +185,7 @@ These are not required but might be helpful.
 +  **Miscellaneous**
 
    +  [Volume, velocity, and variety: Understanding the three V's of big data][], David Gewirtz, 2018.
-
+   +  [Immutability Changes Everything][], Pat Helland, 2015.
 
 
 -----------------------------------
@@ -337,12 +337,6 @@ Students must have their paper work in order and should contact the instructor
 early in the semester in order to have their learning needs appropriately met. 
 
 
-[Lean]: https://leanprover.github.io/
-[KUPF]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
-[KUPF 202]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
-
-[Gradescope]: https://www.gradescope.com/courses/441050
-
 [Apache Spark and Delta Lake Under the Hood]: https://databricks.com/p/ebook/apache-spark-delta-lake-under-the-hood
 [Apache Spark]: https://spark.apache.org/
 
@@ -357,8 +351,6 @@ early in the semester in order to have their learning needs appropriately met.
 [ECEC 100]: https://goo.gl/maps/ZBW1fdPqii6frCJZ7
 [ECEC Room 100]: https://goo.gl/maps/ZBW1fdPqii6frCJZ7
 
-
-
 [FP in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 [FP in Scala GitHub repository]: https://github.com/fpinscala/fpinscala
 [FP in Scala web page]: https://www.manning.com/books/functional-programming-in-scala-second-edition
@@ -368,6 +360,14 @@ early in the semester in order to have their learning needs appropriately met.
 [Functional Programming in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 [Functional Programming in Scala, 2nd ed]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 
+[Gradescope]: https://www.gradescope.com/courses/441050
+
+[Immutability Changes Everything]: https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
+
+[KUPF]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+[KUPF 202]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+
+[Lean]: https://leanprover.github.io/
 [Learning Spark]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
 [Learning Spark, 2nd ed]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
 [Learning Spark: Lightning-Fast Data Analytics]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
@@ -388,6 +388,5 @@ early in the semester in order to have their learning needs appropriately met.
 
 [The Art of Immutable Architecture]: https://amzn.to/3QXwWaD
 [The Art of Immutable Architecture: Theory and Practice of Data Management in Distributed Systems]: https://link.springer.com/book/10.1007/978-1-4842-5955-9
-
 
 [Volume, velocity, and variety: Understanding the three V's of big data]: https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/

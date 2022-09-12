@@ -8,21 +8,32 @@ Readings refer to the following:
 
 +  [LS][] = [Learning Spark, 2nd edition](https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf)
 +  [FPS][] = [Functional Programming in Scala, 2nd edition](https://livebook.manning.com/book/functional-programming-in-scala-second-edition)
++  [3V][] = [Volume, velocity, and variety: Understanding the three V's of big data][], David Gewirtz, 2018.
++  [ICE][] = [Immutability Changes Everything][], Pat Helland, 2015.
+
 
 
 | **Week** | **Date** | **Topic**                                  | **Reading**              | **Homework**                             |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
-| **1**    | 7 Sep    | **Motivation**                             | [LS][] Ch1               |                                          |
-|          | 10 Sep   | Historical overview,                       | [FPS Ch1][]              | [HW 1][] due Mon 19 Sep 23:59            |
-|          |          | programming paradigms.                     | [FPS Ch2][]              | [Project 0][] due Mon 26 Sep 23:59       |
+| **1**    | 7 Sep    | **Motivation**                             | [LS][] Ch1,              |                                          |
+|          | 10 Sep   | Historical overview,                       | [FPS Ch1][], [FPS Ch2][] | [HW 1][] due Mon 19 Sep 23:59            |
+|          |          | programming paradigms.                     | [3V][] (optional)        | [Project 0][] due Mon 26 Sep 23:59       |
+|          |          |                                            | [ICE][] (optional)       | 
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
 | **2**    | 14 Sep   | **Introduction to Functional Programming** | [FPS Ch3][]              |                                          | 
 |          | 17 Sep   | Scala, higher-order functions,             | [FPS Ch4][]              | [HW 2][] due Mon 26 Sep                  | 
 |          |          |  functional data structures, recursion.    | [FPS Ch5][]              | [Project 1][] due Mon 3 Oct              |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
 | **3**    | 21 Sep   | **Functional Programming in Scala**        | [FPS Ch6][] (optional)   |                                          | 
 |          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due Mon 3 Oct                   |
 |          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due Mon 10 Oct             |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
 | **4**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          | 
 |          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
+| **5**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          | 
+|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |
 |          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |
 
 
@@ -55,8 +66,8 @@ Readings refer to the following:
 
 
 
+[3V]: https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/
 [final exams]: https://www5.njit.edu/registrar/exams/finalexams.php
-[KUPF]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
 
 [FPS]: https://livebook.manning.com/book/functional-programming-in-scala-second-edition/
 [FPS Ch1]: https://livebook.manning.com/book/functional-programming-in-scala-second-edition/chapter-1/v-6/
@@ -98,6 +109,12 @@ Readings refer to the following:
 [HW 11]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
 
 
+[ICE]: https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
+[Immutability Changes Everything]: https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
+
+[KUPF]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+[KUPF 202]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+
 [LS]: https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf
 
 
@@ -108,5 +125,4 @@ Readings refer to the following:
 [Project 3]: https://github.com/williamdemeo/cs644-fall2022/tree/master/projects/Project3
 [Project 4]: https://github.com/williamdemeo/cs644-fall2022/tree/master/projects/Project4
 
-<!-- MISC LINKS -->
-[KUPF 202]: https://goo.gl/maps/GjhP3cjrMAJSzVFt5
+[Volume, velocity, and variety: Understanding the three V's of big data]: https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/
