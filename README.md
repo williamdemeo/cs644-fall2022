@@ -158,7 +158,7 @@ These are not required but might be helpful.
 
    +  [Coursera](https://www.coursera.org) offers many courses in [Scala](https://www.coursera.org/courses?query=Scala), [Spark](https://www.coursera.org/courses?query=Spark), [Big Data](https://www.coursera.org/courses?query=big%20data), but we most highly recommend the following course by Martin Odersky:
    
-      +  [Principles of Functional Programming in Scala][] (Scala 2 edition).
+      +  [Principles of Functional Programming in Scala][] (correct link coming soon!)
 
 +  **Books**
 
