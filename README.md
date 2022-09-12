@@ -156,7 +156,7 @@ These are not required but might be helpful.
 
 +  **Online courses and videos**
 
-   +  [Coursera](https://www.coursera.org) offers many courses in [Scala](https://www.coursera.org/courses?query=Scala), [Spark](https://www.coursera.org/courses?query=Spark), [Big Data](https://www.coursera.org/courses?query=big%20data), but we most highly recommend the following course by Martin Odersky:
+   +  [Coursera](https://www.coursera.org) offers many courses in [Scala](https://www.coursera.org/courses?query=scala), [Spark](https://www.coursera.org/courses?query=spark), [Big Data](https://www.coursera.org/courses?query=big%20data), but we most highly recommend the following course by Martin Odersky:
    
       +  [Principles of Functional Programming in Scala][] (correct link coming soon!)
 
