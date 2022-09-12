@@ -12,6 +12,30 @@ This is the main web page for the course *CS 644, Introduction to Big Data* taug
 
 -----
 
+**Contents**
+
+- [What is this web page?](#what-is-this-web-page)
+- [What is the course about?](#what-is-the-course-about)
+- [When and where are the lectures?](#when-and-where-are-the-lectures)
+- [Who is the instructor?](#who-is-the-instructor)
+- [Am I qualified to take this course?](#am-i-qualified-to-take-this-course)
+- [Where is the course schedule/Canvas/homework page?](#where-is-the-course-schedulecanvashomework-page)
+- [When and where are the exams?](#when-and-where-are-the-exams)
+- [What textbooks are required?](#what-textbooks-are-required)
+- [Do I have to attend all the lectures?](#do-i-have-to-attend-all-the-lectures)
+- [What is expected of an NJIT student?](#what-is-expected-of-an-njit-student)
+- [Can I use electronic devices during lecture?](#can-i-use-electronic-devices-during-lecture)
+- [What is the grading policy?](#what-is-the-grading-policy)
+- [Where can I find the homework?](#where-can-i-find-the-homework)
+- [Can I turn in assignments after the deadline?](#can-i-turn-in-assignments-after-the-deadline)
+- [Is it possible to make-up a missed exam?](#is-it-possible-to-make-up-a-missed-exam)
+- [(How) Should I ask questions?](#how-should-i-ask-questions)
+- [Is tutoring available?](#is-tutoring-available)
+- [Can I email the instructor?](#can-i-email-the-instructor)
+- [What if I have a disability?](#what-if-i-have-a-disability)
+
+---------
+
 ## What is the course about?
 
 *Description*. This course provides an in-depth coverage of various topics in
