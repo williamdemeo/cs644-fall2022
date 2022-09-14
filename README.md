@@ -1,4 +1,4 @@
-# CS 644: Introduction to Big Data (Sections 101, 103, 105)
+# CS 644: Introduction to Big Data (§§ 101, 103, 105)
 
 ## NJIT Fall 2022
 
@@ -88,9 +88,9 @@ Students should have a had some prior computer programming experience.  Students
 
 ## Where is the Canvas page for my section?
 
-+ [§101 (Wednesday) Canvas](https://njit.instructure.com/courses/25281)
-+ [§103 (Saturday AM) Canvas](https://njit.instructure.com/courses/25680)
-+ [§105 (Saturday PM) Canvas](https://njit.instructure.com/courses/25681)
++ [§ 101 (Wednesday) Canvas](https://njit.instructure.com/courses/25281)
++ [§ 103 (Saturday AM) Canvas](https://njit.instructure.com/courses/25680)
++ [§ 105 (Saturday PM) Canvas](https://njit.instructure.com/courses/25681)
 
 -------------
 
@@ -100,9 +100,9 @@ The homework information page is at [github.com/williamdemeo/cs644-fall2022/home
 
 The [Gradescope][] pages for this class are the following:
 
-+ [§101 (Wednesday) Gradescope](https://www.gradescope.com/courses/442300)   -- **Entry Code**. 7GX2YY
-+ [§103 (Saturday AM) Gradescope](https://www.gradescope.com/courses/442301) -- **Entry Code**. ZZYVN7
-+ [§105 (Saturday PM) Gradescope](https://www.gradescope.com/courses/442302) -- **Entry Code**. 4V2E8X
++ [§ 101 (Wednesday) Gradescope](https://www.gradescope.com/courses/442300)   -- **Entry Code**. 7GX2YY
++ [§ 103 (Saturday AM) Gradescope](https://www.gradescope.com/courses/442301) -- **Entry Code**. ZZYVN7
++ [§ 105 (Saturday PM) Gradescope](https://www.gradescope.com/courses/442302) -- **Entry Code**. 4V2E8X
 
 
 
@@ -170,13 +170,17 @@ These are not required but might be helpful.
 
 +  **Online courses and videos**
 
-   +  [Coursera](https://www.coursera.org) offers many courses in [Scala](https://www.coursera.org/courses?query=scala), [Spark](https://www.coursera.org/courses?query=spark), [Big Data](https://www.coursera.org/courses?query=big%20data), but we most highly recommend the following course by Martin Odersky:
+   +  [Coursera](https://www.coursera.org) offers many courses in [Scala](https://www.coursera.org/courses?query=scala), [Spark](https://www.coursera.org/courses?query=spark), [Big Data](https://www.coursera.org/courses?query=big%20data), but we most highly recommend the introductory course by Martin Odersky and the Big Data course by Heather Miller.
    
-      +  [Principles of Functional Programming in Scala][] (correct link coming soon!)
+      +  [Functional Programming Principles in Scala](https://www.coursera.org/learn/scala-functional-programming), by Martin Odersky.
+      +  [Big Data Analysis with Scala and Spark](https://www.coursera.org/learn/scala-spark-big-data), by Heather Miller.
 
 +  **Books**
 
+   +  [The Scala 3 Book](https://docs.scala-lang.org/scala3/book/introduction.html): an informal introduction to the Scala language.
    +  [The Science of Functional Programming](https://github.com/winitzki/sofp): A tutorial, with examples in Scala, by Sergei Winitzki (2022).
+
+
 
 +  **Papers**
 
@@ -360,7 +364,7 @@ early in the semester in order to have their learning needs appropriately met.
 [Functional Programming in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 [Functional Programming in Scala, 2nd ed]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 
-[Gradescope]: https://www.gradescope.com/courses/441050
+[Gradescope]: https://www.gradescope.com/
 
 [Immutability Changes Everything]: https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
 

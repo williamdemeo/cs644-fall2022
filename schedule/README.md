@@ -13,28 +13,29 @@ Readings refer to the following:
 
 
 
-| **Week** | **Date** | **Topic**                                  | **Reading**              | **Homework**                             |
-|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
-| **1**    | 7 Sep    | **Motivation**                             | [LS][] Ch1,              |                                          |
-|          | 10 Sep   | Historical overview,                       | [FPS Ch1][], [FPS Ch2][] | [HW 1][] due Mon 19 Sep 23:59            |
-|          |          | programming paradigms.                     | [3V][] (optional)        | [Project 0][] due Mon 26 Sep 23:59       |
-|          |          |                                            | [ICE][] (optional)       | 
-|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
-| **2**    | 14 Sep   | **Introduction to Functional Programming** | [FPS Ch3][]              |                                          | 
-|          | 17 Sep   | Scala, higher-order functions,             | [FPS Ch4][]              | [HW 2][] due Mon 26 Sep                  | 
-|          |          |  functional data structures, recursion.    | [FPS Ch5][]              | [Project 1][] due Mon 3 Oct              |
-|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
-| **3**    | 21 Sep   | **Functional Programming in Scala**        | [FPS Ch6][] (optional)   |                                          | 
-|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due Mon 3 Oct                   |
-|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due Mon 10 Oct             |
-|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
-| **4**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          | 
-|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |
-|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |
-|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|
-| **5**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          | 
-|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |
-|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |
+| **Week** | **Date** | **Topic**                                  | **Reading**              | **Homework**                             | **Slides** |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
+| **1**    | 7 Sep    | **Motivation**                             | [LS][] Ch1,              |                                          |            |
+|          | 10 Sep   | Historical overview,                       | [FPS Ch1][], [FPS Ch2][] |                                          | (none)     |
+|          |          | programming paradigms.                     | [3V][] (optional)        | [HW 1][] due Mon 19 Sep 23:59            |            |
+|          |          |                                            | [ICE][] (optional)       | [Project 0][] due Mon 26 Sep 23:59       |            |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
+| **2**    | 14 Sep   | **Introduction to Functional Programming** | [FPS Ch3][]              |                                          |            |
+|          | 17 Sep   | Scala, higher-order functions,             | [FPS Ch4][]              | [HW 2][] due Mon 26 Sep                  | [Week 2][] |
+|          |          | functional data structures, recursion.     | [FPS Ch5][]              | [Project 1][] due Mon 3 Oct              |            |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
+| **3**    | 21 Sep   | **Functional Programming in Scala**        | [FPS Ch6][] (optional)   |                                          |            |
+|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due Mon 3 Oct                   |            |
+|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due Mon 10 Oct             |            |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
+| **4**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          |            |
+|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |            |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |            |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
+| **5**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          |            |
+|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |            |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |            |
+|----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 
 
 ----------------------
@@ -84,7 +85,7 @@ Readings refer to the following:
 <!-- HW LINKS -->
 [Gradescope]: https://www.gradescope.com/courses/441050
 
-<!-- [HW 1]: https://www.gradescope.com/courses/441050 -->
+[HW 1]: https://www.gradescope.com/
 <!-- [HW 2]: https://www.gradescope.com/courses/441050 -->
 <!-- [HW 3]: https://www.gradescope.com/courses/441050 -->
 <!-- [HW 4]: https://www.gradescope.com/courses/441050 -->
@@ -96,7 +97,6 @@ Readings refer to the following:
 <!-- [HW 10]: https://www.gradescope.com/courses/441050 -->
 <!-- [HW 11]: https://www.gradescope.com/courses/441050 -->
 
-[HW 1]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
 [HW 2]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
 [HW 3]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
 [HW 4]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
@@ -126,3 +126,7 @@ Readings refer to the following:
 [Project 4]: https://github.com/williamdemeo/cs644-fall2022/tree/master/projects/Project4
 
 [Volume, velocity, and variety: Understanding the three V's of big data]: https://www.zdnet.com/article/volume-velocity-and-variety-understanding-the-three-vs-of-big-data/
+
+[Getting Started with Apache Spark]: https://docs.databricks.com/getting-started/spark/quick-start.html
+[Getting Started with Azure (with Databricks)]: https://docs.microsoft.com/en-us/training/modules/get-started-azure-databricks/5-exercise
+[Azure ML exercises]: https://microsoftlearning.github.io/dp-090-databricks-ml/
