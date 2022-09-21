@@ -99,7 +99,7 @@ important that you work through this assignment carefully.
 
 1.  **Obtain the Project Files**
 
-    Download the [example.zip][] archive file and extract it somewhere on your machine.
+    Download the [example.zip][] (coming soon!) archive file and extract it somewhere on your machine.
 
 2.  **Opening the Project in VSCode or Intellij**
 
@@ -219,5 +219,5 @@ important that you work through this assignment carefully.
 <!-- Your submission token is unique to you and should not be shared with anyone. You may submit as many times as you like. -->
 
 [Tools Setup]: ../ToolsSetup.md
-[example.zip]: example.zip
+<!-- [example.zip]: example.zip -->
 [scala-project.zip]: scala-project.zip
