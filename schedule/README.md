@@ -21,20 +21,20 @@ Readings refer to the following:
 |          |          |                                            | [ICE][] (optional)       | [Project 0][] due Mon 26 Sep 23:59       |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **2**    | 14 Sep   | **Introduction to Functional Programming** | [FPS Ch3][]              |                                          |            |
-|          | 17 Sep   | Scala, higher-order functions,             | [FPS Ch4][]              | [HW 2][] due Mon 26 Sep                  | [Week 2][] |
-|          |          | functional data structures, recursion.     | [FPS Ch5][]              | [Project 1][] due Mon 3 Oct              |            |
+|          | 17 Sep   | Scala, higher-order functions,             | [FPS Ch4][]              | [HW 2][] due TBD                 | [Week 2][] |
+|          |          | functional data structures, recursion.     | [FPS Ch5][]              | [Project 1][] TBD              |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **3**    | 21 Sep   | **Functional Programming in Scala**        | [FPS Ch6][] (optional)   |                                          |            |
-|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due Mon 3 Oct                   |            |
-|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due Mon 10 Oct             |            |
+|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due TBD <!-- Mon 3 Oct -->                   |            |
+|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due <!-- Mon 10 Oct       -->       |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **4**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          |            |
-|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |            |
-|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |            |
+|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due TBD <!-- Mon 10 Oct -->                  |            |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due TBD <!-- Mon 17 Oct   -->           |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **5**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          |            |
-|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due Mon 10 Oct                  |            |
-|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due Mon 17 Oct             |            |
+|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 5][] due TBD <!-- Mon 10 Oct   -->                |            |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due TBD <!-- Mon 17 Oct  -->            |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 
 
@@ -97,9 +97,9 @@ Readings refer to the following:
 <!-- [HW 10]: https://www.gradescope.com/courses/441050 -->
 <!-- [HW 11]: https://www.gradescope.com/courses/441050 -->
 
-[HW 2]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
-[HW 3]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
-[HW 4]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
+<!-- [HW 2]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md -->
+<!-- [HW 3]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md -->
+<!-- [HW 4]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md -->
 [HW 5]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
 [HW 6]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
 [HW 7]: https://github.com/williamdemeo/cs644-fall2022/blob/master/lecture/dne.md
