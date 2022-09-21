@@ -39,23 +39,23 @@ important that you work through this assignment carefully.
     ```shell
     $ scala
 
-    Welcome to Scala 3.1.3 (11.0.4, Java Java HotSpot(TM) 64-Bit Server VM).
+    Welcome to Scala 3.2.0 (11.0.4, Java Java HotSpot(TM) 64-Bit Server VM).
     Type in expressions for evaluation. Or try :help.
-                                                                                                                                          
+
     scala> 
     ```
 
     This loads the Scala REPL and shows the `scala>` prompt, where you can type in Scala code and evaluate Scala expressions:
 
-   ```scala
-   scala> 1 + 1
-   val res0: Int = 2
+    ```scala
+    scala> 1 + 1
+    val res0: Int = 2
 
-   scala> val x = 42
-   val x: Int = 42
-   ```
+    scala> val x = 42
+    val x: Int = 42
+    ```
 
-   To exit the Scala REPL, type `Ctrl-C`.
+    To exit the Scala REPL, type `Ctrl-C`.
 
 3.  **Write some Scala code in a Worksheet**
 
