@@ -25,16 +25,16 @@ Readings refer to the following:
 |          |          | functional data structures, recursion.     | [FPS Ch5][]              | [Project 1][] TBD              |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **3**    | 21 Sep   | **Functional Programming in Scala**        | [FPS Ch6][] (optional)   |                                          |            |
-|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due TBD <!-- Mon 3 Oct -->                   |            |
-|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due <!-- Mon 10 Oct       -->       |            |
+|          | 25 Sep   | The `Option[_]` functor, laziness          | [FPS Ch7][]              | [HW 3][] due TBD                   |            |
+|          |          | purely functional parallelism.             | [FPS Ch8][] (optional)   | [Project 2][] due       |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **4**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          |            |
-|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due TBD <!-- Mon 10 Oct -->                  |            |
-|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due TBD <!-- Mon 17 Oct   -->           |            |
+|          | 1 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 4][] due TBD                   |            |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due TBD          |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 | **5**    | 28 Sep   | **Introduction to Spark**                  | [LS][] Ch2               |                                          |            |
-|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 5][] due TBD <!-- Mon 10 Oct   -->                |            |
-|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due TBD <!-- Mon 17 Oct  -->            |            |
+|          | 8 Oct    | Transformation, actions, RDDs,             | [LS][] Ch3               | [HW 5][] due TBD                |            |
+|          |          | Dataframes, Datasets, Spark SQL            | [LS][] Ch4               | [Project 3][] due TBD           |            |
 |----------|----------|--------------------------------------------|--------------------------|------------------------------------------|------------|
 
 
