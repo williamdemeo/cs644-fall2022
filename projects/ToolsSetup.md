@@ -17,6 +17,9 @@ Please follow the official installation instructions here: https://docs.scala-la
 
 M​ake sure you have at least JDK 11 (you can check by running the command java -version in a terminal).
 
+If you're using Windows and you see a message about a missing `VCRUNTIME140.dll` file, please find out how to fix it on [this page](https://answers.microsoft.com/en-us/windows/forum/all/vcruntime140dll-missing-how-can-i-fix/c5c1461a-3b75-428c-9c5d-18d56a11f2bc).
+
+
 Make sure you have the command-line tool "sbt" (the Scala Build Tool). Run
 the command `sbt --version` on the command-line. You should see something
 like the following (`$` is the shell prompt):
