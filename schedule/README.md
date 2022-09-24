@@ -130,3 +130,7 @@ Readings refer to the following:
 [Getting Started with Apache Spark]: https://docs.databricks.com/getting-started/spark/quick-start.html
 [Getting Started with Azure (with Databricks)]: https://docs.microsoft.com/en-us/training/modules/get-started-azure-databricks/5-exercise
 [Azure ML exercises]: https://microsoftlearning.github.io/dp-090-databricks-ml/
+
+
+[Week 1]: https://github.com/williamdemeo/cs644-fall2022/blob/main/lecture/Lecture_Week01.pdf
+[Week 2]: https://github.com/williamdemeo/cs644-fall2022/blob/main/lecture/Lecture_Week02.pdf
