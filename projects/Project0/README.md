@@ -33,7 +33,7 @@ important that you work through this assignment carefully.
     Scala definition and evaluate Scala expressions.
 
     Assuming you installed Scala according to the instructions given in the
-    [Tools Setup](ToolsSetup.md) document, you can start a REPL by invoking the
+    [Tools Setup][] document, you can start a REPL by invoking the
     command `scala`. You should see something like the following.
 
     ```shell
