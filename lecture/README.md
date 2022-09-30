@@ -2,13 +2,10 @@
 
 ## LECTURE NOTES
 
-Some of the reading assignments below refer to the following:
+The reading assignments below refer to the following:
 
 +  [LS][] = [Learning Spark, 2nd edition](https://pages.databricks.com/rs/094-YMS-629/images/LearningSpark2.0.pdf)
 +  [FPS][] = [Functional Programming in Scala, 2nd edition](https://livebook.manning.com/book/functional-programming-in-scala-second-edition)
-+  [3V][] = [Volume, velocity, and variety: Understanding the three V's of big data][], David Gewirtz, 2018.
-+  [ICE][] = [Immutability Changes Everything][], Pat Helland, 2015.
-
 
 
 ### Week 1
@@ -19,7 +16,9 @@ Historical overview of Big Data, programming paradigms for Big Data.
 +  **Required reading**. [LS][] Ch 1, [FPS Ch1][], [FPS Ch2][]
 +  **Homework**. [HW 1][] due Mon 19 Sep 23:59.
 
-+  **Recommended reading**. [3V][], [ICE][] 
++  **Recommended reading**.
+   +  [Volume, velocity, and variety: Understanding the three V's of big data][], David Gewirtz, 2018.
+   +  [Immutability Changes Everything][], Pat Helland, 2015.
 +  **Related videos**. [ScalaDays 2019 Keynote lecture](https://youtu.be/_Rnrx2lo9cw) by Martin Odersky (creator of Scala).
 
 ### Week 2
