@@ -49,13 +49,13 @@ Functional data structures, recursion, the `Option[_]` functor, laziness. Hands-
    +  [Scala Option: a gentle introduction](https://blog.rockthejvm.com/scala-option/)
    +  [Scala 3 indentation](https://blog.rockthejvm.com/scala-3-indentation/)
 +  **Related resources**.
-   +  [Scala official website](https://www.scala-lang.org/), 
+   +  [Scala official website](https://www.scala-lang.org/)
    +  [Scala Installation](https://docs.scala-lang.org/getting-started/index.html)
    +  [Learning Resources](https://docs.scala-lang.org/)
 +  **Related videos**.
    +  **Installing Scala**. [VSCode](https://youtu.be/iATmBDxlYAA), [IntelliJ](https://youtu.be/LWojiAi8PKQ)
    +  **Your first Scala program**. [VSCode](https://youtu.be/uVMGPrH5_Uc), [IntelliJ](https://youtu.be/7kfX1mg079g)
-   +  [Immutable Data: your next superpower](https://youtu.be/0cjpBVNNSf0) (see also, other great [videos by 47degrees](https://www.youtube.com/c/47deg/videos))
+   +  [Immutable Data: your next superpower](https://youtu.be/0cjpBVNNSf0) (other [videos by 47degrees](https://www.youtube.com/c/47deg/videos))
 
 
 ### Week 4
