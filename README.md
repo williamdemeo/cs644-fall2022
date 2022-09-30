@@ -68,7 +68,7 @@ Ref. [NJIT Graduate Computing Sciences Course Catalog][]
 
 **Instructor**.  Dr. William DeMeo   
 **Email**. [williamdemeo at gmail](mailto:williamdemeo@gmail.com?subject=CS644: (replace-this-text-with-informative-subject-description))    
-**Office location**. GITC 4201A  
+**Office location**. [GITC][] 4201A  
 **Office hours**. Tuesdays 14:00--16:00
 
 ----------------
@@ -364,6 +364,7 @@ early in the semester in order to have their learning needs appropriately met.
 [Functional Programming in Scala]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 [Functional Programming in Scala, 2nd ed]: https://www.manning.com/books/functional-programming-in-scala-second-edition
 
+[GITC]: https://goo.gl/maps/Sj3SJzQkhCAyE7QG6
 [Gradescope]: https://www.gradescope.com/
 
 [Immutability Changes Everything]: https://www.cidrdb.org/cidr2015/Papers/CIDR15_Paper16.pdf
