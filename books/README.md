@@ -9,9 +9,9 @@
 
 We will rely primarily on three books in this section of the Introduction to Big Data course.
 
-1. [The Art of Immutable Architecture][]
-2. [Learning Spark, 2nd ed][]
-3. [Functional Programming in Scala, 2nd ed][]
+1. [Learning Spark, 2nd ed][]
+2. [Functional Programming in Scala, 2nd ed][]
+3. [The Art of Immutable Architecture][]
 
 Students are not required to purchase hard copies of these books, but should at least have access to electronic versions of them.  Fortunately, a hard copy of the first book costs only about $35 on Amazon; a pdf of the second book can be freely downloaded, and, at the time of this writing, the first 10 chapters of the third title can be accessed for free on the publisher's website.
 
@@ -20,23 +20,6 @@ The rest of this page contains more information about these books, as well as ot
 --------------------
 
 ### Primary References
-
---------------------
-
-<a target="_blank" href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
-
-
-**Title**. [The Art of Immutable Architecture: theory and practice of data management in distributed systems][]  
-**Edition**. 1st  
-**Author**. Michael L. Perry  
-**Year**. 2020  
-**Publisher**. Apress (Springer)  
-**ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
-<!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
-
-The official web page for the book is [link.springer.com/book/10.1007/978-1-4842-5955-9](https://link.springer.com/book/10.1007/978-1-4842-5955-9).
-
-You can order the book [directly from the publisher](https://link.springer.com/book/10.1007/978-1-4842-5955-9) or [from Amazon](https://amzn.to/3QXwWaD).
 
 -----------------------------
 
@@ -70,6 +53,23 @@ end up with the 1st edition (covering Scala 2).
 
 The source code that accompanies [FP in Scala][] is available in [this zip archive](https://www.manning.com/downloads/2363) **or** from the [FP in Scala GitHub repository][].
 
+
+--------------------
+
+<a target="_blank" href="https://www.amazon.com/Art-Immutable-Architecture-Management-Distributed/dp/1484259548?gclid=CjwKCAjwgaeYBhBAEiwAvMgp2t6Fc-Dn0QMMjm0hc3FJndEIOW_XStPTUCpRADLqqIpgkjv3ijXdihoCFvIQAvD_BwE&hvadid=477528170397&hvdev=c&hvlocphy=9067609&hvnetw=g&hvqmt=e&hvrand=11469300344308977118&hvtargid=kwd-929435591755&hydadcr=7439_9611215&keywords=the+art+of+immutable+architecture&qid=1661624886&sr=8-1&linkCode=li2&tag=typefunc-20&linkId=35f5f16cff158e080c72fed8fc70dd2a&language=en_US&ref_=as_li_ss_il"><img border="0" src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1484259548&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=typefunc-20&language=en_US" ></a>
+
+
+**Title**. [The Art of Immutable Architecture: theory and practice of data management in distributed systems][]  
+**Edition**. 1st  
+**Author**. Michael L. Perry  
+**Year**. 2020  
+**Publisher**. Apress (Springer)  
+**ISBN**. 978-1-4842-5954-2 (paperback); 978-1-4842-5955-9 (electronic)
+<!-- https://doi.org/10.1007/978-1-4842-5955-9 -->
+
+The official web page for the book is [link.springer.com/book/10.1007/978-1-4842-5955-9](https://link.springer.com/book/10.1007/978-1-4842-5955-9).
+
+You can order the book [directly from the publisher](https://link.springer.com/book/10.1007/978-1-4842-5955-9) or [from Amazon](https://amzn.to/3QXwWaD).
 
 ------------------------------------
 
