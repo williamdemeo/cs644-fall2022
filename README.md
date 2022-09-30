@@ -146,7 +146,7 @@ Students are expected to have access to the following textbooks (electronic or h
 
 +  [Functional Programming in Scala][]  
 
-   <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src="img/fpinscala.png" width="100"></a>
+   <a href="https://www.manning.com/books/functional-programming-in-scala-second-edition"><img src=".img/fpinscala.png" width="100"></a>
 
    **Edition**. 2nd  
    **Authors**. Michael Pilquist, Rúnar Bjarnason, and Paul Chiusano  
