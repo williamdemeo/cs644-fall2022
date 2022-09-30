@@ -1,4 +1,6 @@
-## CS 644 Books
+# CS 644: Introduction to Big Data (§§ 101, 103, 105)
+
+## BOOKS
 
 <!-- [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/) -->
 <!-- [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/) -->
