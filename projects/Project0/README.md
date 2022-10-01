@@ -95,7 +95,7 @@ important that you work through this assignment carefully.
     shown on the right. 
 
 
-### The Assignment (to do on your own or with ONE partner)
+### The Assignment ~to do on your own or with ONE partner~ (we will do it in class)
 
 1.  **Obtain the Project Files**
 
@@ -109,7 +109,7 @@ important that you work through this assignment carefully.
     code. In the folder src/main/scala, open the package example and
     double-click the file Lists.scala.
 
-    If you run the tests right away, they will fail. Implement two methods (sum and max).
+    If you run the tests right away, they will fail. Implement the `add` method.
 
     When working on an assignment, it is important that you don't change any
     already implemented method, class or object names or types. Doing so will
@@ -118,76 +118,78 @@ important that you work through this assignment carefully.
 
 3.  **Running your Code**
 
-    Once you start writing some code, you might want to run your code on a few
-    examples to see if it works correctly. We present two possibilities to run
-    the methods you implemented.
+    (I will show you how to do this in class.)
 
-    +  **Using the Scala REPL**
+   <!-- Once you start writing some code, you might want to run your code on a few -->
+<!--     examples to see if it works correctly. We present two possibilities to run -->
+<!--     the methods you implemented. -->
 
-       In the sbt console, start the Scala REPL by typing console.
+<!--     +  **Using the Scala REPL** -->
 
-       ```scala
-       > console
-       [info] Starting scala interpreter...
+<!--        In the sbt console, start the Scala REPL by typing console. -->
 
-       scala>
-       ```
+<!--        ```scala -->
+<!--        > console -->
+<!--        [info] Starting scala interpreter... -->
 
-       The classes of the assignment are available inside the REPL, so you can
-       for instance import all the methods from object Lists: 
+<!--        scala> -->
+<!--        ``` -->
+
+<!--        The classes of the assignment are available inside the REPL, so you can -->
+<!--        for instance import all the methods from object Lists:  -->
 
 
-       ```scala
-       scala> import example.Lists._
-       import example.Lists._
+<!--        ```scala -->
+<!--        scala> import example.Lists._ -->
+<!--        import example.Lists._ -->
 
-       scala> max(List(1,3,2))
-       res1: Int = 3
-       ```
+<!--        scala> max(List(1,3,2)) -->
+<!--        res1: Int = 3 -->
+<!--        ``` -->
 
-    +  **Using a Main Object**
+<!--     +  **Using a Main Object** -->
 
-       Another way to run your code is to create a new Main object that can be executed by the Java Virtual Machine.
+<!--        Another way to run your code is to create a new Main object that can be executed by the Java Virtual Machine. -->
 
-       In your IDE, right-click on the package `example` in `src/main/scala` and select "New" > "Scala Object".
+<!--        In your IDE, right-click on the package `example` in `src/main/scala` and select "New" > "Scala Object". -->
 
-       Use `Main` as the object name (any other name would also work).
+<!--        Use `Main` as the object name (any other name would also work). -->
 
-       Confirm by clicking "Finish"
+<!--        Confirm by clicking "Finish" -->
 
-       In order to make the object executable it has to extend the type App. Change the object definition to the following:
+<!--        In order to make the object executable it has to extend the type App. Change the object definition to the following: -->
 
-       ```
-       object Main extends App {
-         println(Lists.max(List(1,3,2)))
-       }
-       ```
+<!--        ``` -->
+<!--        object Main extends App { -->
+<!--          println(Lists.max(List(1,3,2))) -->
+<!--        } -->
+<!--        ``` -->
 
-       Now the `Main` object can be executed. In order to do so in your IDE
+<!--        Now the `Main` object can be executed. In order to do so in your IDE -->
 
-       Right-click on the file `Main.scala`
+<!--        Right-click on the file `Main.scala` -->
 
-       Select "Run As" > "Scala Application"
+<!--        Select "Run As" > "Scala Application" -->
 
-       You can also run the `Main` object in the sbt console by simply using the command run.
+<!--        You can also run the `Main` object in the sbt console by simply using the command run. -->
 
-4.  **Writing Tests**
+<!-- 4.  **Writing Tests** -->
 
-    Throughout the assignments of this course we will require you to write unit
-    tests for the code that you write. Unit tests are the preferred way to test
-    your code because unlike REPL commands, unit tests are saved and can be
-    re-executed as often as required. This is a great way to make sure that
-    nothing breaks when you have go back later to change some code that you
-    wrote earlier on. 
+<!--     Throughout the assignments of this course we will require you to write unit -->
+<!--     tests for the code that you write. Unit tests are the preferred way to test -->
+<!--     your code because unlike REPL commands, unit tests are saved and can be -->
+<!--     re-executed as often as required. This is a great way to make sure that -->
+<!--     nothing breaks when you have go back later to change some code that you -->
+<!--     wrote earlier on.  -->
 
-    We will be using the ScalaTest testing framework to write our unit tests. In
-    your IDE, navigate to the folder `src/test/scala` and open the file
-    `ListsSuite.scala` in package `example`. This file contains a step-by-step
-    tutorial to learn how to write and execute ScalaTest unit tests. 
+<!--     We will be using the ScalaTest testing framework to write our unit tests. In -->
+<!--     your IDE, navigate to the folder `src/test/scala` and open the file -->
+<!--     `ListsSuite.scala` in package `example`. This file contains a step-by-step -->
+<!--     tutorial to learn how to write and execute ScalaTest unit tests.  -->
 
-5.  **Submitting your Solution**
+<!-- 5.  **Submitting your Solution** -->
 
-    New Gradescope instructions coming soon!
+<!--     New Gradescope instructions coming soon! -->
 
 
 <!-- Once you implemented all the required methods and tested you code thoroughly, you can submit it to Coursera. The only way to submit your solution is through sbt, so you need to start sbt in your project directory. -->
