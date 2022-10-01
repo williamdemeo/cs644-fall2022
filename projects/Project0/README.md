@@ -99,7 +99,7 @@ important that you work through this assignment carefully.
 
 1.  **Obtain the Project Files**
 
-    Download the [example.zip](../example.zip) archive file and extract it somewhere on your machine.
+    Download the [example.zip](example.zip) archive file and extract it somewhere on your machine.
 
 2.  **Opening the Project in VSCode or Intellij**
 
