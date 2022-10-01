@@ -79,7 +79,7 @@ important that you work through this assignment carefully.
     to import the project. 
 
 
-    ![img](../.img/import-build.png)
+    ![img](../../.img/import-build.png)
 
 
     Click "import build."
