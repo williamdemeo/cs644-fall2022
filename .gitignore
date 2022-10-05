@@ -1,0 +1,7 @@
+*.~undo-tree~
+tmp
+temp
+local
+*~
+auto
+.DS_Store
