@@ -68,7 +68,7 @@ Introduction to Spark. Transformations, actions, RDDs.  Datasets, Dataframes, Sp
 
 +  **Recommended reading**.
    +  [Spark: a brief overview](../handouts/Slides_8-Steps-V2.pdf)
-   +  [Tutorial: your first Spark program](https://www.47deg.com/blog/using-scala-3-with-spark/https://www.47deg.com/blog/using-scala-3-with-spark/)
+   +  [Tutorial: your first Spark program](https://www.47deg.com/blog/using-scala-3-with-spark/)
 +  **Related resources**.
    +  [Spark official website](https://spark.apache.org/)
    +  [Spark Installation](https://spark.apache.org/downloads.html)
