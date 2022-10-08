@@ -32,3 +32,10 @@ This section only applies to users of Windows.  You do not need to follow these 
     c.  Create a new environment variable (enter "environment variables" in the Windows search bar, click on "Add Environment Variables," and add a new system variable) named `HADOOP_HOME` with a value of `C:\Hadoop`.  Select the `PATH` environment variable, and `APPEND` a new entry, separated by a semi-colon, of `%HADOOP_HOME%\bin`. Restart IntelliJ to make sure the new environment variables are loaded.
 
 
+## Getting Data
+
+Please download the Movie Lens dataset `ml-100k.zip` from the following url:
+
+https://files.grouplens.org/datasets/movielens/ml-100k.zip
+
+Unzip the file and put it in a folder called `data` inside your spark project.
