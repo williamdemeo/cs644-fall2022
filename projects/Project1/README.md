@@ -6,13 +6,11 @@
 
 ### Instructions
 
-To start, download the assignment: [wikipedia.zip](wikipedia.zip). 
+To start, download the assignment: [wikipedia.zip](https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project1/wikipedia.zip).
 
-For this assignment, you also need to download [the data](http://alaska.epfl.ch/~dockermoocs/bigdata/wikipedia.dat) (~133 MB):
+For this assignment, you also need to download the data file [wikipedia.dat](https://drive.google.com/file/d/1HGpInNzqDw4Bdr_F1LjZ-BVDTeubfAdJ/view?usp=sharing) (~133 MB).
 
-http://alaska.epfl.ch/~dockermoocs/bigdata/wikipedia.dat
-
-and place it in the data folder of your project.
+and place it in the `src/resources/wikipedia` folder of your project.
 
 In this assignment, you will get to know Spark by exploring full-text Wikipedia articles.
 Gauging how popular a programming language is important for companies judging
