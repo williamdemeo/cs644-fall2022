@@ -39,3 +39,7 @@ Please download the Movie Lens dataset `ml-100k.zip` from the following url:
 https://files.grouplens.org/datasets/movielens/ml-100k.zip
 
 Unzip the file and put it in a folder called `data` inside your spark project.
+
+## SparkContext vs SparkSession
+
+https://sparkbyexamples.com/spark/sparksession-vs-sparkcontext/
