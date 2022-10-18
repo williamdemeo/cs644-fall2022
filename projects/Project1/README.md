@@ -6,7 +6,7 @@
 
 ### Instructions
 
-To start, download the assignment: [wikipedia.zip](https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project1/wikipedia.zip).
+To start, download the assignment: [wikipedia.zip][].
 
 For this assignment, you also need to download the data file [wikipedia.dat](https://drive.google.com/file/d/1HGpInNzqDw4Bdr_F1LjZ-BVDTeubfAdJ/view?usp=sharing) (~133 MB).
 
@@ -29,7 +29,7 @@ For the sake of simplified logistics, we'll run Spark in "local" mode. This mean
 that your full Spark application will be run on only one node, locally, on your laptop.
 (Later in the course, we'll run our Spark programs on a cluster with multiple compute nodes, but the principles we learn here will still apply to that more general setup.)
 
-### Task 1: Create a SparkContext object
+### Task 0: Create a SparkContext object
 
 To start, we need to create a **Spark context** (an object of type `SparkContext`), which gives us a "handle" on our cluster. Once we have a `SparkContext` object, we use it to create and populate `RDD`s with data.
 
@@ -37,22 +37,39 @@ To create a `SparkContext` object, we first need to a `SparkConfig` instance, wh
 represents the configuration of our Spark application. It's here that we indicate our intention to run 
 our application in "local" mode. 
 
-We must also name our Spark application. For help, see the [Spark API Docs](https://spark.apache.org/docs/2.1.0/api/scala/index.html#org.apache.spark.package).
+We must also name our Spark application. (See the [Spark API Docs](https://spark.apache.org/docs/2.1.0/api/scala/index.html#org.apache.spark.package).)
 
-Configure your cluster to run in "local" mode by implementing `val conf` and `val sc` in the `main` method of the project you loaded into VSCode or IntelliJ (after extracting the `wikipedia.zip` archive).
+We configure our cluster to run in "local" mode by implementing `val conf` and
+`val sc` in the `WikipediaRanking` object in the `WikipediaRanking.scala` file.
 
+Once you extract the [wikipedia.zip][] archive mentioned above and load it into
+your IDE (either VSCode or IntelliJ IDEA), open the `WikipediaRanking.scala`
+file and notice that the `SparkConf` and `SparkContext` objects have already
+been created for you.
 
-### Task 2: Read-in Wikipedia Data
+**Important**. Take note of how the `SparkConf` and `SparkContext` objects are
+created since you will have to create these objects yourself in future projects.
+
+-------------
+
+### Task 1: Read-in Wikipedia Data
 
 There are several ways to read data into Spark. The simplest way to read in data is to
-convert an existing collection in memory to an `RDD` using the parallelize method of
+convert an existing collection in memory to an `RDD` using the `textFile` method of
 the Spark context.
 
-In the program files that come in the `wikipedia.zip` file for this assignment, we already have a fully implemented method called `parse` (in the object `WikipediaData` object) which parses a line of the dataset and turns it into a `WikipediaArticle` object.
+In the program files that come in `wikipedia.zip`, we have already implemented a
+method called `parse` (in the object `WikipediaData` object) which parses a line 
+of the dataset and turns it into a `WikipediaArticle` object.
 
-Your first task is to create an `RDD` (by implementing `val wikiRdd`) which should contain the collection of `WikipediaArticle` article objects.
+Your first task is to create an `RDD` (by implementing `val wikiRdd`) which
+should contain the collection of `WikipediaArticle` article objects.
 
-### Task 3: Compute a ranking of programming languages
+*Hints*. Use `sc.textFile`, `WikipediaData.filePath`, `map`, and `WikipediaData.parse`.
+
+------------------------
+
+### Task 2: Compute a ranking of programming languages
 
 We will use a simple metric for determining the popularity of a programming
 language: the number of Wikipedia articles that mention the language at least
@@ -61,22 +78,32 @@ once.
 We will make three attempts at doing this, where each is an improvement on the
 previous attempt.
 
------------------------------------------------------
+#### Rank languages attempt #1
 
-**Rank languages attempt #1**. `rankLangs`
+**Computing the number of occurrences of a lanuage** (`occurrencesOfLangStart`)
 
-**Computing** `occurrencesOfLangStart`
-
-Start by implementing a helper method `occurrencesOfLang` which computes the
-number of articles in an RDD of type `RDD[WikipediaArticles]` that mention the given
-language at least once. For the sake of simplicity we check that it least one word
+Start by implementing the helper method `occurrencesOfLang` which returns a
+collection of type `RDD[WikipediaArticles]` containing those articles in the
+given collection (`rdd`) that mention the given language (`lang`) at least once. 
+For the sake of simplicity, we check that at least one word
 (delimited by spaces) of the article text is equal to the given language.
 
-**Computing the ranking** `rankLangs`
+*Hints*. Use `aggregate` on `rdd` and `mentionsLanguage` on each
+`WikipediaArticle` object in the collection. Recall, the signature of aggregate
+is:
 
-Using `occurrencesOfLang`, implement a method `rankLangs` which computes a list of
-pairs where the second component of the pair is the number of articles that mention
-the language (the first component of the pair is the name of the language).
+```scala
+def aggregate[B](z: B)(seqOp: (B, A) => B, combOp: (B, B) => B): B
+```
+
+**Computing the ranking** (`rankLangs`)
+
+Implement a method called `rankLangs` which uses `occurrencesOfLang` and computes
+a list of pairs where the second component of the pair is the number of articles
+that mention the language (the first component of the pair is the name of the
+language).
+
+*Hints*. Use `map`, `occurencesOfLang`, and `sortBy`.
 
 Here's an example of what `rankLangs` might return:
 
@@ -88,16 +115,15 @@ The list should be sorted in descending order. That is, according to this rankin
 pair with the highest second component (the count) should be the first element of the
 list.
 
-Pay attention to roughly how long it takes to run this part! (It should take tens of
-seconds... maybe less on a fast machine.)
+Pay attention to roughly how long it takes to run this part.
+(It should take tens of seconds... maybe less on a fast machine.)
 
 -----------------------------------------------------
 
 
+#### Rank languages attempt #2
 
-**Rank languages attempt #2**. `rankLangsUsingIndex`
-
-**Compute an inverted index**
+**Computing an inverted index** (`makeIndex`)
 
 An *inverted index* is an index data structure storing a mapping from keys, such as
 words or numbers, to a set of documents. In particular, the purpose of an inverted
@@ -120,31 +146,42 @@ there is at most one pair. Furthermore, the second component of each pair (the
 `Iterable`) contains the `WikipediaArticles` that mention the language at least
 once. 
 
-*Hint*. You might want to use methods `flatMap` and `groupByKey` on the RDD for this part.
+This could be accomplished in one line, and you may go ahead and do it
+that way if you wish.  However, we recommend starting by breaking the task down
+in steps.
+
+1.  Compute a collection (`pairs`) of all pairs `(l, wa)`, where `l` is a
+    language and `wa` is a Wikipedia article. (*Hints*. Use `flatMap` and `map`.)
+
+2.  Compute the collection (`mentionedPairs`) of all pairs `(l, wa)` such that
+    `wa` is an article that mentions language `l`. (*Hints*. Use `filter` and
+    `mentionsLanguage`.)
+
+3.  Finally, write the expression that you want the `makeIndex` function to
+    return. (*Hints*. Apply `groupByKey` to `mentionedPairs`.)
+
 
 **Computing the ranking** `rankLangsUsingIndex`
 
-Use the `makeIndex` method implemented in the previous part to implement a faster
-method for computing the language ranking.
+Use the `makeIndex` method to implement a faster method for computing the language ranking.
 
-Like in Part 1, `rankLangsUsingIndex` should compute a list of pairs where the second
-component of the pair is the number of articles that mention the language (the first
-component of the pair is the name of the language).
+Like in Part 1, `rankLangsUsingIndex` should compute a list of pairs where 
+the first component of the pair is the name of the language and the second
+component is the number of articles that mention the language. 
+(*Hints*. Use `mapValues`, `sortBy`, `collect`, and `toList`.)
 
 Again, the list should be sorted in descending order. That is, according to this ranking,
 the pair with the highest second component (the count) should be the first element of
 the list.
 
-*Hint*. the method `mapValues` on `PairRDD` could be useful for this part.
-
-Can you notice a performance improvement over attempt #2? Why?
+Can you notice a performance improvement over attempt #2? If so, why do you
+think that is?
 
 
 -----------------------------------------------------
 
 
-
-**Rank languages attempt #3**. `rankLangsReduceByKey`
+#### Rank languages attempt #3
 
 In the case where the inverted index from above is only used for computing the
 ranking and for no other task (full-text search, say), it is more efficient to use the
@@ -155,25 +192,30 @@ containing pairs (each pair is interpreted as a *key-value pair*).
 Implement the `rankLangsReduceByKey` method, this time computing the ranking
 without the inverted index, using `reduceByKey`.
 
-Like in part 1 and 2, `rankLangsReduceByKey` should compute a list of pairs where the
-second component of the pair is the number of articles that mention the language (the
-first component of the pair is the name of the language).
+To begin, first implement the function `zipLangWithPoint` which 
+creates a list of `(lang, integer)` pairs which contains one pair `(l, 1)` for each Wikipedia
+article in which the language `l` occurs.  For instance, if "Scala" appears in only two
+999999 articles, then the RDD should contain 999,999 occurrences of the pair
+("Scala", 1). (*Hints*. Use `flatMap`, `withFilter`, and `map` for this.)
 
-Again, the list should be sorted in descending order. That is, according to this ranking,
-the pair with the highest second component (the count) should be the first element of
-the list.
+Next, implement `rankLangsReduceByKey`. Like in part 1 and 2,
+`rankLangsReduceByKey` should compute a list of pairs where the first component
+of the pair is the name of the language and the second component is the number
+of articles that mention the language. Again, the list should be sorted in
+descending order. That is, according to this ranking, the pair with the highest
+second component (the count) should be the first element of the list.
+(*Hints.* Use `zipLangWithPoint(langs, rdd)`, `reduceByKey`, `sortBy`, `collect`, and `toList`.)
 
-Can you notice an improvement in performance compared to measuring both the
-computation of the index and the computation of the ranking as we did in attempt #2?
-
+Can you notice an improvement in performance compared to measuring *both* the
+computation of the index *and* the computation of the ranking as we did in attempt #2?
 If so, can you think of a reason?
 
 ### How to test your code.
 
-In the IDE, open the `WikipediaSuite.scala` file.  If you project builds
-automatically (VSCode) and correctly, then you should be able to run the
+In the IDE, open the `WikipediaSuite.scala` file.  If your project builds
+automatically and correctly, then you should be able to run the
 `WikipediaSuite` class which contains tests that your code is getting the
-correct results.  In IntelliJ, you might have to invoke the "build project"
+correct results.  In IntelliJ IDEA, you might have to invoke the "build project"
 command, either from the "Build" menu or by clicking on the hammer icon.
 
 ### How to submit your solution.
@@ -181,3 +223,4 @@ command, either from the "Build" menu or by clicking on the hammer icon.
 Upload your modified version of the `WikipediaRankings.scala` file to
 Gradescope.
 
+[wikipedia.zip]: https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project1/wikipedia.zip
