@@ -230,11 +230,39 @@ If so, can you think of a reason?
 
 ### How to test your code.
 
-In the IDE, open the `WikipediaSuite.scala` file.  If your project builds
-automatically and correctly, then you should be able to run the
-`WikipediaSuite` class which contains tests that your code is getting the
-correct results.  In IntelliJ IDEA, you might have to invoke the "build project"
-command, either from the "Build" menu or by clicking on the hammer icon.
+You can check that your code passes the five tests specified in
+`WikipediaSuite.scala` either by using the IDE or by invoking the `test` command
+at the sbt command prompt.
+
+#### In VSCode
+
+With your project open in VSCode, open the explorer and select the
+`WikipediaSuite.scala` file (located in `src/test/scala`). If your project was
+already built correctly, with no errors, then you should see a green "play" icon
+next to the declaration of the `WikipediaSuite` class. You can run the tests by
+clicking that icon.
+
+
+#### In IntelliJ
+
+With your project open in IntelliJ, open the explorer and select the
+`WikipediaSuite.scala` file (located in `src/test/scala`). You might have to
+manually invoke the "build project" command, either from the "Build" menu or by
+clicking on the hammer icon.  Once the build is complete, if it's successful,
+you should see green "play" icons next to the declaration of the
+`WikipediaSuite` class.  You can run the tests by clicking that icon.
+
+
+#### At the sbt command prompt
+
+If you prefer to use a terminal/command line interface (cli),
+
+1.  Open a terminal window.
+2.  Change to the `wikipedia` main project directory (the one with the
+    `build.sbt` file in it) (e.g., `cd ~/Project1/wikipedia`).
+3.  Run `sbt` by typing `sbt` on the command line and hitting enter. You should
+    see the sbt command prompt `sbt:wikipedia>`.
+4.  At the sbt prompt, type `test` and hit enter.
 
 ### How to submit your solution.
 
