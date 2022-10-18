@@ -226,6 +226,8 @@ Can you notice an improvement in performance compared to measuring *both* the
 computation of the index *and* the computation of the ranking as we did in attempt #2?
 If so, can you think of a reason?
 
+--------------------------------------------
+
 ### How to test your code.
 
 In the IDE, open the `WikipediaSuite.scala` file.  If your project builds
