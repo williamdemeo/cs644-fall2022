@@ -10,7 +10,11 @@ To start, download the assignment: [wikipedia.zip][].
 
 For this assignment, you also need to download the data file [wikipedia.dat](https://drive.google.com/file/d/1HGpInNzqDw4Bdr_F1LjZ-BVDTeubfAdJ/view?usp=sharing) (~133 MB).
 
-and place it in the `src/resources/wikipedia` folder of your project.
+and place it in the `src/main/resources/wikipedia` folder of your project.
+
+**Important**. The `wikipedia.dat` file must be located in the
+`src/main/resources/wikipedia` folder of your project, otherwise your code will
+not run without errors.
 
 In this assignment, you will get to know Spark by exploring full-text Wikipedia articles.
 Gauging how popular a programming language is important for companies judging
@@ -28,6 +32,18 @@ over to Databricks Community Edition to experiment with your code on a "micro-cl
 For the sake of simplified logistics, we'll run Spark in "local" mode. This means
 that your full Spark application will be run on only one node, locally, on your laptop.
 (Later in the course, we'll run our Spark programs on a cluster with multiple compute nodes, but the principles we learn here will still apply to that more general setup.)
+
+- [Task 0: Create a SparkContext object](#task-0-create-a-sparkcontext-object)
+- [Task 1: Read-in Wikipedia Data](#task-1-read-in-wikipedia-data)
+- [Task 2: Compute a ranking of programming languages](#task-2-compute-a-ranking-of-programming-languages)
+    - [Rank languages attempt #1](#rank-languages-attempt-1)
+    - [Rank languages attempt #2](#rank-languages-attempt-2)
+    - [Rank languages attempt #3](#rank-languages-attempt-3)
+- [How to test your code.](#how-to-test-your-code)
+- [How to submit your solution.](#how-to-submit-your-solution)
+
+----------------------
+
 
 ### Task 0: Create a SparkContext object
 
