@@ -69,7 +69,7 @@ Ref. [NJIT Graduate Computing Sciences Course Catalog][]
 **Instructor**.  Dr. William DeMeo   
 **Email**. [williamdemeo at gmail](mailto:williamdemeo@gmail.com?subject=CS644: (replace-this-text-with-informative-subject-description))    
 **Office location**. [GITC][] 4201A  
-**Office hours**. Tuesdays 14:00--16:00
+**Office hours**. Wednesdays 14:00--16:00
 
 ----------------
 
