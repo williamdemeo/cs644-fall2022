@@ -13,7 +13,7 @@ For this assignment, you also need to download the data file [wikipedia.dat](htt
 and place it in the `src/main/resources/data` folder of your project.
 
 **Important**. The `wikipedia.dat` file must be located in the
-`src/main/resources/wikipedia` folder of your project, otherwise your code will
+`src/main/resources/data` folder of your project, otherwise your code will
 not run without errors.
 
 In this assignment, you will get to know Spark by exploring full-text Wikipedia articles.
