@@ -10,7 +10,7 @@ To start, download the assignment: [wikipedia.zip][].
 
 For this assignment, you also need to download the data file [wikipedia.dat](https://drive.google.com/file/d/1HGpInNzqDw4Bdr_F1LjZ-BVDTeubfAdJ/view?usp=sharing) (~133 MB).
 
-and place it in the `src/main/resources/wikipedia` folder of your project.
+and place it in the `src/main/resources/data` folder of your project.
 
 **Important**. The `wikipedia.dat` file must be located in the
 `src/main/resources/wikipedia` folder of your project, otherwise your code will
