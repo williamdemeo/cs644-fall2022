@@ -253,16 +253,59 @@ you should see green "play" icons next to the declaration of the
 `WikipediaSuite` class.  You can run the tests by clicking that icon.
 
 
-#### At the sbt command prompt
+#### Using the sbt REPL
 
-If you prefer to use a terminal/command line interface (cli),
+If you prefer to use a terminal/command line interface (cli) to test your code, you can use the sbt REPL.
 
 1.  Open a terminal window.
 2.  Change to the `wikipedia` main project directory (the one with the
     `build.sbt` file in it) (e.g., `cd ~/Project1/wikipedia`).
-3.  Run `sbt` by typing `sbt` on the command line and hitting enter. You should
-    see the sbt command prompt `sbt:wikipedia>`.
-4.  At the sbt prompt, type `test` and hit enter.
+
+
+3.  Run `sbt` by typing `sbt` on the command line and hitting enter.
+
+    After sbt reads your `build.sbt` file and downloads and compiles all the
+    required dependencies, you should see something like the following in the
+    terminal window:
+
+    ```shell
+    williamdemeo@lampe:~/wikipedia$ sbt
+    [info] welcome to sbt 1.7.1 (Oracle Corporation Java 11.0.4)
+    [info] loading global plugins from /home/williamdemeo/.sbt/1.0/plugins
+    [info] loading settings for project wikipedia-build-build from metals.sbt ...
+    [info] loading project definition from ~/wikipedia/project
+    [info] loading settings for project wikipedia-build from metals.sbt ...
+    [info] loading project definition from ~/wikipedia/project
+    [success] Generated .bloop/wikipedia-build.json
+    [success] Total time: 0 s, completed Oct 22, 2022, 10:57:22 PM
+    [info] loading settings for project root from build.sbt ...
+    [info] set current project to wikipedia (in build file:~/wikipedia/)
+    [info] sbt server started at local:///home/williamdemeo/.sbt/1.0/server/d02c03774b971d6bf250/sock
+    [info] started sbt server
+    sbt:wikipedia> 
+    ```
+
+4.  At the `sbt:wikipedia>` prompt, type `test` and hit enter.
+
+    The tests should run and show you any errors and give some indication of which tests you've passed/failed.
+
+    If all the tests pass, then, after lots of other output, you will see lines like the following:
+
+    ```shell
+    22/10/22 23:01:43 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+    22/10/22 23:01:43 INFO SparkContext: Successfully stopped SparkContext
+    wikipedia.WikipediaSuite:
+      + 'occurrencesOfLang' should work for (specific) RDD with one element 4.034s
+      + 'rankLangs' should work for RDD with two elements 0.075s
+      + 'makeIndex' creates a simple index with two entries 0.329s
+      + 'rankLangsUsingIndex' should work for a simple RDD with three elements 0.258s
+      + 'rankLangsReduceByKey' should work for a simple RDD with four elements 0.461s
+    [info] Passed: Total 5, Failed 0, Errors 0, Passed 5
+    [success] Total time: 15 s, completed Oct 22, 2022, 11:01:43 PM
+    sbt:wikipedia> 
+    ```
+
+------------------------------------
 
 ### How to submit your solution.
 
