@@ -7,7 +7,9 @@
 ### Instructions
 
 To start, download the assignment: [timeusage.zip] (coming soon!). For this assignment, you also
-need to download the data file [atussum.csv](https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/atussum.csv.bz2) (164 MB) and place it in the folder `src/main/resources/timeusage/` in your project directory.
+need to download the data file
+[atussum.csv.bz2](https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/atussum.csv.bz2)
+(164 MB) unzip it (with a bz2 unzip utility program) and place it in the folder `src/main/resources/timeusage/` in your project directory.
 
 ### The Problem
 
