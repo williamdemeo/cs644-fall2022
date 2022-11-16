@@ -7,13 +7,9 @@
 ### Instructions
 
 To start, download the assignment: [timeusage.zip] (coming soon!). For this assignment, you also
-need to download the data (164 MB):
+need to download the data file [atussum.csv](atussum.csv) (164 MB) and place it in the folder `src/main/resources/timeusage/` in your project directory.
 
-http://alaska.epfl.ch/~dockermoocs/bigdata/atussum.csv
-
-and place it in the folder `src/main/resources/timeusage/` in your project directory.
-
-### The problem
+### The Problem
 
 The dataset is provided by Kaggle and is documented here:
 
