@@ -6,21 +6,36 @@
 
 ### Instructions
 
-To start, download the assignment: [timeusage.zip] (coming soon!). For this assignment, you also
-need to download the data file
-[atussum.csv.bz2](https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/atussum.csv.bz2)
-(164 MB) unzip it (with a bz2 unzip utility program) and place it in the folder `src/main/resources/timeusage/` in your project directory.
+#### Getting Started
 
-### The Problem
+1.  Download the source code [timeusage.zip][].
 
-The dataset is provided by Kaggle and is documented here:
+2.  Download the data file [atussum.csv.bz2][].
 
-https://www.kaggle.com/bls/american-time-use-survey
+3.  Extract [timeusage.zip][] in a directory of your choice and open the
+    resulting `timeusage` project directory in either VSCode or IntelliJ IDEA.
 
+    **Important!** Windows users, make sure your project doesn't end up inside
+    an extra subdirectory. Specifically, after you unzip `timeusage.zip` you 
+    should have just `timeusage/build.sbt` and `timeusage/src`; you should NOT
+    have `timeusage/timeusage/build.sbt` and `timeusage/timeusage/src`.
 
-The file uses the comma-separated values format: the first line is a header defining the field names of each column, and every following line contains an information record, which is itself made of several columns. It contains information about how people spend their time (e.g., sleeping, eating, working, etc.).
+4.  Extract the [atussum.csv.bz2][] data file and place it in the folder
+    `src/main/resources/timeusage/` under the `timeusage` project directory.
 
-Here are the first lines of the dataset:
+------------------------
+    
+#### The Problem
+
+The dataset in the `atussum.csv` file is provided by Kaggle and documented [here](https://www.kaggle.com/bls/american-time-use-survey).
+
+The file uses the comma-separated values (CSV) format: the first line is a
+header defining the field names of each column, and every following line
+contains an information record, which is itself made of several columns. It
+contains information about how people spend their time (e.g., sleeping, eating,
+working, etc.).
+
+Here are the first four lines of the dataset:
 
 ```
 1  tucaseid,gemetsta,gtmetsta,peeduca,pehspnon,ptdtrace,teage,telfs,temjot,teschenr ,teschlvl,tesex,
@@ -95,60 +110,68 @@ Here are the first lines of the dataset:
    0,0
 ```
 
-Our goal is to identify three groups of activities:
+Our goal is to identify three groups of activities,
 
 *  primary needs (sleeping and eating), 
 *  work,
-*  other (leisure).
+*  other (leisure),
 
-And then to observe how do people allocate their time between these three kinds of
-activities, and if we can see di erences between men and women, employed and
-unemployed people, and young (less than 22 years old), active (between 22 and 55
-years old) and elder people.
+and to observe how people allocate their time between these three kinds of
+activities, and whether we can see differences among different groups.
+Specifically, we will compare and contrast men versus women, employed versus
+unemployed people, or young (less than 22 years old) versus active (between 22
+and 55 years old) versus elder people.
 
-At the end of the assignment we will be able to answer the following questions based
-on the dataset:
+At the end of the assignment you should be able to answer the following
+questions based on the dataset.
 
 *  How much time do we spend on primary needs compared to other activities?
 *  Do women and men spend the same amount of time in working?
 *  Does the time spent on primary needs change when people get older?
 *  How much time do employed people spend on leisure compared to unemployed people?
 
-To achieve this, we will read the dataset with Spark, transform it into an
+To achieve this, we will read in the data file with Spark, transform it into an
 intermediate dataset which will be easier to work with for our use case, and finally
 compute information that will answer the above questions.
 
-### Read-in Data
+-------------
 
-The simplest way to create a `DataFrame` consists in reading a file and letting Spark-sql
-infer the underlying schema. However this approach does not work well with CSV files,
-because the inferred column types are always `String`.
+#### Read-in Data
 
-In our case, the first column contains a `String` value identifying the respondent but all
-the other columns contain numeric values. Since this schema will not be correctly
-inferred by Spark-sql, we will define it programmatically. However, the number of
-columns is huge. So, instead of manually enumerating all the columns we can rely on
-the fact that, in the CSV file, the first line contains the name of all the columns of the
-dataset.
+The simplest way to create a [DataFrame][] is to read a file and let SparkSQL
+infer the underlying schema. Unfortunately, this approach doesn't work well 
+with CSV files because the inferred column types are always `String`.
 
-Our first task consists in turning this first line into a Spark-sql `StructType`. This
-is the purpose of the `dfSchema` method. This method returns a `StructType` describing the
-schema of the CSV file, where the first column has type `StringType` and all the others
-have type `DoubleType`. None of these columns are nullable.
+In the present case, the first column contains a `String` value identifying the
+respondent, but all the other columns contain numeric values. Since this schema
+will not be correctly inferred by SparkSQL, we must define the schema ourselves.
+But the number of columns is huge, so we definitely do not want to manually
+enumerate each column.  Fortunately, the names of all columns in the dataset
+appear in the first line of the CSV file, so we can parse that line to assign
+names to the columns programmatically.
+
+Our first task consists in turning this first line into a SparkSQL [StructType][]. This
+is the purpose of the `dfSchema` method. This method returns a [StructType][] describing the
+schema of the CSV file, where the first column has type [StringType][] and all the others
+have type [DoubleType][]. None of these columns are nullable.
 
 ```scala
 def dfSchema(columnNames: List[String]): StructType
 ```
 
 The second step is to be able to effectively read the CSV file is to turn each line into a
-Spark-sql `Row` containing columns that match the schema returned by `dfSchema`.
+SparkSQL [Row][] containing columns that match the schema returned by `dfSchema`.
 That's the job of the `row` method.
 
 ```scala
 def row(line: List[String]): Row
 ```
 
-### Project
+
+-------------
+
+#### Transform the Data
+
 As you probably noticed, the initial dataset contains lots of information that we don't
 need to answer our questions, and even the columns that contain useful information
 are too detailed. For instance, we are not interested in the exact age of each
@@ -184,6 +207,11 @@ columns list, the "work" columns list and the "other" columns list.
 def classifiedColumns(columnNames: List[String]): (List[Column], List[Column], List[Column])
 ```
 
+
+-------------
+
+#### Data Transformation
+
 The second step is to implement the `timeUsageSummary` method, which projects the
 detailed dataset into a summarized dataset. This summary will contain only 6 columns:
 the working status of the respondent, his sex, his age, the amount of dailyhours spent
@@ -210,11 +238,12 @@ Last, people that are not employable will be ltered out of the resulting dataset
 The comment on top of the `timeUsageSummary` method will give you more specific
 information about what is expected in each column.
 
-### Aggregate
+-------------------
+
+#### Data Aggregation
 
 Finally, we want to compare the *average time* spent on each activity, for all the
 combinations of working status, sex and age.
-
 
 We will implement the `timeUsageGrouped` method which computes the average
 number of hours spent on each activity, grouped by working status (employed or
@@ -230,8 +259,9 @@ see when you compare elderly men versus elderly women's time usage? How much
 time elder people allocate to leisure compared to active people? How much time do
 active employed people spend to work?
 
+-----------------
 
-### Alternative ways to manipulate data
+#### Alternative Data Transformation Approach
 
 We can also implement the `timeUsageGrouped` method by using a plain SQL query
 instead of the `DataFrame` API. Note that sometimes using the programmatic API to
@@ -246,7 +276,7 @@ Can you think of a previous query that would have been a nightmare to write in p
 SQL?
 
 Finally, in the last part of this assignment we will explore yet another alternative way
-to express queries: using typed `Datasets` instead of untyped `DataFrames`.
+to express queries: using typed [Dataset][]s instead of untyped `DataFrame`s.
 
 ```scala
 def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
@@ -272,4 +302,16 @@ requires one (column names are generally lost when using typed transformations).
 
 ### How to submit
 
-Post the Scala file you edited to Gradescope.
+To submit your solution, post your edited `TimeUsage.scala` file to the Gradescope
+assignment called "Project 2."
+
+
+[timeusage.zip]: https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/timeusage.zip
+[atussum.csv.bz2]: https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/atussum.csv.bz2
+[StructType]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/types/StructType.html
+[StringType]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/types/StringType.html
+[DoubleType]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/types/DoubleType.html
+[Row]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Row.html
+[DataSet]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html
+
+[DataFrame]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html#DataFrame=org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]
