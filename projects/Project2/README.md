@@ -20,8 +20,8 @@
     should have just `timeusage/build.sbt` and `timeusage/src`; you should NOT
     have `timeusage/timeusage/build.sbt` and `timeusage/timeusage/src`.
 
-4.  Extract the [atussum.csv.bz2][] data file and place it in the folder
-    `src/main/resources/timeusage/` under the `timeusage` project directory.
+4.  Extract the [atussum.csv.bz2][] data file and place it in the
+    `timeusage/src/main/resources/timeusage/` directory.
 
 ------------------------
     
@@ -112,9 +112,9 @@ Here are the first four lines of the dataset:
 
 Our goal is to identify three groups of activities,
 
-*  primary needs (sleeping and eating), 
-*  work,
-*  other (leisure),
+*  **primary needs** (sleeping and eating), 
+*  **work**,
+*  **other** (leisure),
 
 and to observe how people allocate their time between these three kinds of
 activities, and whether we can see differences among different groups.
@@ -191,10 +191,10 @@ A first step in this direction is to identify which columns are related to the s
 activity. Based on the description of the activity corresponding to each column (given
 in this document), we deduce the following rules:
 
-*  "primary needs" activities (sleeping, eating, etc.) are reported in columns starting with
+*  **primary needs** activities (sleeping, eating, etc.) are reported in columns starting with
    "t01", "t03", "t11", "t1801" and "t1803" ;
-*  working activities are reported in columns starting with "t05" and "t1805" ;
-*  other activities (leisure) are reported in columns starting with "t02", "t04", "t06", "t07",
+*  **work** activities are reported in columns starting with "t05" and "t1805" ;
+*  **other** activities (leisure) are reported in columns starting with "t02", "t04", "t06", "t07",
    "t08", "t09", "t10", "t12", "t13", "t14", "t15", "t16" and "t18" (only those which are not part
    of the previous groups).
 
@@ -242,10 +242,10 @@ information about what is expected in each column.
 
 #### Data Aggregation
 
-Finally, we want to compare the *average time* spent on each activity, for all the
+Finally, we want to compare the **average time** spent on each activity, for all the
 combinations of working status, sex and age.
 
-We will implement the `timeUsageGrouped` method which computes the average
+Implement the `timeUsageGrouped` method which computes the average
 number of hours spent on each activity, grouped by working status (employed or
 unemployed), sex and age (young, active or elder), and also ordered by working status,
 sex and age. The values will be rounded to the nearest tenth.
