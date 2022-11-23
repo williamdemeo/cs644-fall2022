@@ -116,14 +116,13 @@ Our goal is to identify three groups of activities,
 *  **work**,
 *  **other** (leisure),
 
-and to observe how people allocate their time between these three kinds of
-activities, and whether we can see differences among different groups.
-Specifically, we will compare and contrast men versus women, employed versus
-unemployed people, or young (less than 22 years old) versus active (between 22
-and 55 years old) versus elder people.
+and to observe how people allocate their time between these three kinds of activities, and
+whether we can see differences among different groups. Specifically, we will compare and
+contrast men versus women, employed versus unemployed people, or young (less than 22 years
+old) versus active (between 22 and 55 years old) versus elder people.
 
-At the end of the assignment you should be able to answer the following
-questions based on the dataset.
+At the end of the assignment you should be able to answer the following questions based on
+the dataset.
 
 *  How much time do we spend on primary needs compared to other activities?
 *  Do women and men spend the same amount of time in working?
@@ -138,58 +137,66 @@ compute information that will answer the above questions.
 
 #### Read-in Data
 
-The simplest way to create a [DataFrame][] is to read a file and let SparkSQL
-infer the underlying schema. Unfortunately, this approach doesn't work well 
-with CSV files because the inferred column types are always `String`.
+The simplest way to create a [DataFrame][] is to read a file and let SparkSQL infer the
+underlying schema. Unfortunately, this approach doesn't work well with CSV files because
+the inferred column types are always `String`.
 
 In the present case, the first column contains a `String` value identifying the
-respondent, but all the other columns contain numeric values. Since this schema
-will not be correctly inferred by SparkSQL, we must define the schema ourselves.
-But the number of columns is huge, so we definitely do not want to manually
-enumerate each column.  Fortunately, the names of all columns in the dataset
-appear in the first line of the CSV file, so we can parse that line to assign
-names to the columns programmatically.
+respondent, but all the other columns contain numeric values. Since this schema will not
+be correctly inferred by SparkSQL, we must define the schema ourselves. But the number of
+columns is huge, so we definitely do not want to manually enumerate each column.
+Fortunately, the names of all columns in the dataset appear in the first line of the CSV
+file, so we can parse that line to assign names to the columns programmatically.
 
-Our first task consists in turning this first line into a SparkSQL [StructType][]. This
-is the purpose of the `dfSchema` method. This method returns a [StructType][] describing the
-schema of the CSV file, where the first column has type [StringType][] and all the others
-have type [DoubleType][]. None of these columns are nullable.
+1.  The first task is to turn this first line into a SparkSQL [StructType][]. This is the
+    purpose of the `dfSchema` method. This method returns a [StructType][] describing the
+    schema of the CSV file, where the first column has type [StringType][] and all the
+    others have type [DoubleType][]. None of these columns are nullable.
 
-```scala
-def dfSchema(columnNames: List[String]): StructType
-```
+    ```scala
+    def dfSchema(columnNames: List[String]): StructType
+    ```
 
-The second step is to be able to effectively read the CSV file is to turn each line into a
-SparkSQL [Row][] containing columns that match the schema returned by `dfSchema`.
-That's the job of the `row` method.
+    *Hints*.
+    +  Handle the `head` field and `tail` fields separately because the type of the `head`
+       field is special (`StringType`).
+    +  Define a `val` called, say, `head_field`, using the [StructField][] constructor
+       with arguments `columnNames.head`, `StringType`, and `nullable = false` as arguments.
+    +  Define `val tail_field` as `columnNames.tail.map(???)`; replace the `???` with an
+       anonymous function (e.g., `fld => StructField(fld, ???, ???)`) (Of course, you
+       should replace the `???` with the appropriate arguments.)
+    +  Finally, `dfSchema` should return `StructType(head_field :: tail_fields)`.
 
-```scala
-def row(line: List[String]): Row
-```
+2.  The second step to effectively read in the CSV file is to turn each line into a
+    SparkSQL [Row][] containing columns that match the schema returned by `dfSchema`. 
+    That's the job of the `row` method.
 
+    ```scala
+    def row(line: List[String]): Row
+    ```
+
+    *Hints*. Use `Row.fromSeq` with argument `line.head :: line.tail.map(???)`. (Replace
+    `???` with the appropriate argument.)
 
 -------------
 
 #### Transform the Data
 
 As you probably noticed, the initial dataset contains lots of information that we don't
-need to answer our questions, and even the columns that contain useful information
+need in order to answer our questions, and even the columns that contain useful information
 are too detailed. For instance, we are not interested in the exact age of each
 respondent, but just whether she was "young", "active" or "elder".
 
 Also, the time spent on each activity is very detailed (there are more than 50 reported
 activities). Again, we don't need this level of detail; we are only interested in three
-activities: primary needs, work and other.
-
-So, with this initial dataset it would a bit hard to express the queries that would give us
-the answers we are looking for.
+activities: primary needs, work and other. So, with this initial dataset it would a bit
+hard to express the queries that would give us the answers we are looking for.
 
 The second part of this assignment consists in transforming the initial dataset into a
-format that will be easier to work with.
-
-A first step in this direction is to identify which columns are related to the same
-activity. Based on the description of the activity corresponding to each column (given
-in this document), we deduce the following rules:
+format that will be easier to work with. A first step in this direction is to identify
+which columns are related to the same activity. Based on the description of the activity
+corresponding to each column (given in [this document](https://www.bls.gov/tus/home.htm),
+we deduce the following rules:
 
 *  **primary needs** activities (sleeping, eating, etc.) are reported in columns starting with
    "t01", "t03", "t11", "t1801" and "t1803" ;
@@ -198,14 +205,31 @@ in this document), we deduce the following rules:
    "t08", "t09", "t10", "t12", "t13", "t14", "t15", "t16" and "t18" (only those which are not part
    of the previous groups).
 
-Then our work consists in implementing the `classifiedColumns` method, which
-classifies the given list of column names into three `Column` groups (primary needs,
-work or other). This method should return a triplet containing the "primary needs"
-columns list, the "work" columns list and the "other" columns list.
+Then our work consists in implementing the `classifiedColumns` method, which classifies
+the given list of column names into three `Column` groups (primary needs, work or other).
+This method should return a triple containing the "primary needs" columns list, the
+"work" columns list and the "other" columns list.
 
 ```scala
 def classifiedColumns(columnNames: List[String]): (List[Column], List[Column], List[Column])
 ```
+
+*Hints*.
+1.  Create three lists of strings, called, say, `p`, `w`, `o`, containing the column name
+    prefixes associated with each activity described above. For instance, `p` would be
+    the list `List("t01", "t03", "t11", "t1801", "t1803")`.
+2.  Use `p`, `w`, `o` to filter the given list (`columnNames`) of column names to obtain
+    three lists of strings, called, say, `primary`, `work`, `other`.  For example,
+
+    ```scala
+    val primary = columnNames.filter(s1 => p.exists(s2 => s1.startsWith(s2)))
+    ```
+
+    Similarly for `work`, but be carefull! ...you cannot simply use the above filter to 
+    get the `other` column names since, for example, `t1801` starts with `t18` but it's
+    already included among the "primary needs" column names.
+3.  Use `.map(col)` to convert each of these lists of strings (from step 2) into a list of
+    columns and return the results as a triple (of type `(List[Column], List[Column], List[Column])`).
 
 
 -------------
@@ -315,3 +339,4 @@ assignment called "Project 2."
 [DataSet]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html
 
 [DataFrame]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html#DataFrame=org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]
+[StructField]: https://spark.apache.org/docs/3.1.3/api/scala/org/apache/spark/sql/types/StructField.html
