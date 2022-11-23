@@ -175,7 +175,7 @@ file, so we can parse that line to assign names to the columns programmatically.
     def row(line: List[String]): Row
     ```
 
-    *Hints*. Use `Row.fromSeq` with argument `line.head :: line.tail.map(???)`. (Replace
+    *Hints*. Use [Row.fromSeq][] with argument `line.head :: line.tail.map(???)`. (Replace
     `???` with the appropriate argument.)
 
 -------------
@@ -300,16 +300,16 @@ Can you think of a previous query that would have been a nightmare to write in p
 SQL?
 
 Finally, in the last part of this assignment we will explore yet another alternative way
-to express queries: using typed [Dataset][]s instead of untyped `DataFrame`s.
+to express queries: using typed [Dataset][]s instead of untyped [DataFrame][]s.
 
 ```scala
 def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
 ```
 
-Implement the `timeUsageSummaryTyped` method to convert a `DataFrame` returned
-by `timeUsageSummary` into a `DataSet[TimeUsageRow]`. The `TimeUsageRow` is a
+Implement the `timeUsageSummaryTyped` method to convert a [DataFrame][] returned
+by `timeUsageSummary` into a [Dataset][][TimeUsageRow]`. The `TimeUsageRow` is a
 data type that models the content of a row of a summarized dataset. To achieve the
-conversion you might want to use the `getAs` method of `Row`. This method retrieves a
+conversion you might want to use the [getAs][] method of [Row][]. This method retrieves a
 named column of the row and attempts to cast its value to a given type.
 
 ```scala
@@ -319,9 +319,9 @@ def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow]
 Then, implement the `timeUsageGroupedTyped` method that performs the same
 query as `timeUsageGrouped` but uses typed APIs as much as possible. Note that not
 all the operations have a typed equivalent. `round` is an example of an operation that has
-no typed equivalent: it will return a `Column` that you will have to turn into a
-`TypedColumn` by calling `.as[Double]`. Another example is `orderBy`, which has no
-typed equivalent. Make sure your `Dataset` has a schema because this operation
+no typed equivalent: it will return a [Column][] that you will have to turn into a
+[TypedColumn][] by calling .[as][]`[Double]`. Another example is `orderBy`, which has no
+typed equivalent. Make sure your [Dataset][] has a schema because this operation
 requires one (column names are generally lost when using typed transformations).
 
 ### How to submit
@@ -336,9 +336,13 @@ assignment called "Project 2."
 [StringType]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/types/StringType.html
 [DoubleType]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/types/DoubleType.html
 [Row]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Row.html
-[DataSet]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Dataset.html
+[Dataset]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Dataset.html
 [Column]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Column.html
 
 [DataFrame]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/index.html#DataFrame=org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]
 [StructField]: https://spark.apache.org/docs/3.1.3/api/scala/org/apache/spark/sql/types/StructField.html
 [comma-separated values]: https://en.wikipedia.org/wiki/Comma-separated_values
+[getAs]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Row.html#getAs[T](i:Int):T
+[Row.fromSeq]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Row$.html#fromSeq(values:Seq[Any]):org.apache.spark.sql.Row
+[TypedColumn]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/TypedColumn.html
+[as]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Column.html#as[U](implicitevidence$1:org.apache.spark.sql.Encoder[U]):org.apache.spark.sql.TypedColumn[Any,U]
