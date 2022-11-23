@@ -29,7 +29,7 @@
 
 The dataset in the `atussum.csv` file is provided by Kaggle and documented [here](https://www.kaggle.com/bls/american-time-use-survey).
 
-The file uses the comma-separated values (CSV) format: the first line is a
+The file uses the [comma-separated values][] (CSV) format: the first line is a
 header defining the field names of each column, and every following line
 contains an information record, which is itself made of several columns. It
 contains information about how people spend their time (e.g., sleeping, eating,
@@ -206,7 +206,7 @@ we deduce the following rules:
    of the previous groups).
 
 Then our work consists in implementing the `classifiedColumns` method, which classifies
-the given list of column names into three `Column` groups (primary needs, work or other).
+the given list of column names into three [Column][] groups (primary needs, work or other).
 This method should return a triple containing the "primary needs" columns list, the
 "work" columns list and the "other" columns list.
 
@@ -229,7 +229,7 @@ def classifiedColumns(columnNames: List[String]): (List[Column], List[Column], L
     get the `other` column names since, for example, `t1801` starts with `t18` but it's
     already included among the "primary needs" column names.
 3.  Use `map` and `col` to convert each of these lists of strings (from step 2) into a list of
-    columns and return the results as a triple (of type `(List[Column], List[Column], List[Column])`).
+    columns and return the results as a triple.
 
 
 -------------
@@ -243,10 +243,10 @@ on primary needs activities, the amount of daily hours spent on working and the 
 of daily hours spent on other activities.
 
 ```scala
-def timeUsageSummary( primaryNeedsColumns: List[Column]
-                    , workColumns: List[Column]
-                    , otherColumns: List[Column]
-                    , df: DataFrame
+def timeUsageSummary( primaryNeedsColumns : List[Column]
+                    , workColumns         : List[Column]
+                    , otherColumns        : List[Column]
+                    , df                  : DataFrame
                     ) : DataFrame
 ```
 
@@ -290,7 +290,7 @@ active employed people spend to work?
 We can also implement the `timeUsageGrouped` method by using a plain SQL query
 instead of the `DataFrame` API. Note that sometimes using the programmatic API to
 build queries is a lot easier than writing a plain SQL query. If you do not have
-experience with SQL, you might find these examples useful.
+experience with SQL, you might find [these examples](https://en.wikipedia.org/wiki/SQL_syntax#Queries) useful.
 
 ```scala
 def timeUsageGroupedSqlQuery(viewName: String): String
@@ -332,11 +332,13 @@ assignment called "Project 2."
 
 [timeusage.zip]: https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/timeusage.zip
 [atussum.csv.bz2]: https://github.com/williamdemeo/cs644-fall2022/raw/main/projects/Project2/atussum.csv.bz2
-[StructType]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/types/StructType.html
-[StringType]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/types/StringType.html
-[DoubleType]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/types/DoubleType.html
-[Row]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Row.html
-[DataSet]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html
+[StructType]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/types/StructType.html
+[StringType]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/types/StringType.html
+[DoubleType]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/types/DoubleType.html
+[Row]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Row.html
+[DataSet]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Dataset.html
+[Column]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Column.html
 
-[DataFrame]: https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/index.html#DataFrame=org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]
+[DataFrame]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/index.html#DataFrame=org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]
 [StructField]: https://spark.apache.org/docs/3.1.3/api/scala/org/apache/spark/sql/types/StructField.html
+[comma-separated values]: https://en.wikipedia.org/wiki/Comma-separated_values
