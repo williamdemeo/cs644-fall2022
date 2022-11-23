@@ -318,11 +318,11 @@ def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow]
 
 Then, implement the `timeUsageGroupedTyped` method that performs the same
 query as `timeUsageGrouped` but uses typed APIs as much as possible. Note that not
-all the operations have a typed equivalent. `round` is an example of an operation that has
-no typed equivalent: it will return a [Column][] that you will have to turn into a
-[TypedColumn][] by calling .[as][]`[Double]`. Another example is `orderBy`, which has no
-typed equivalent. Make sure your [Dataset][] has a schema because this operation
-requires one (column names are generally lost when using typed transformations).
+all the operations have a typed equivalent. For example, [round][] will return a [Column][]
+that you will have to turn into a [TypedColumn][] by calling .[as][]`[Double]`. 
+Another example is [orderBy][], which also has no typed equivalent. Make sure your
+[Dataset][] has a schema because this operation requires one (column names are generally
+lost when using typed transformations).
 
 ### How to submit
 
@@ -346,3 +346,5 @@ assignment called "Project 2."
 [Row.fromSeq]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Row$.html#fromSeq(values:Seq[Any]):org.apache.spark.sql.Row
 [TypedColumn]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/TypedColumn.html
 [as]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Column.html#as[U](implicitevidence$1:org.apache.spark.sql.Encoder[U]):org.apache.spark.sql.TypedColumn[Any,U]
+[orderBy]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/Dataset.html#orderBy(sortExprs:org.apache.spark.sql.Column*):org.apache.spark.sql.Dataset[T]
+[round]: https://spark.apache.org/docs/3.3.1/api/scala/org/apache/spark/sql/functions$.html#round(e:org.apache.spark.sql.Column):org.apache.spark.sql.Column
