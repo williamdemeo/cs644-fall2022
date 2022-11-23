@@ -228,7 +228,7 @@ def classifiedColumns(columnNames: List[String]): (List[Column], List[Column], L
     Similarly for `work`, but be carefull! ...you cannot simply use the above filter to 
     get the `other` column names since, for example, `t1801` starts with `t18` but it's
     already included among the "primary needs" column names.
-3.  Use `.map(col)` to convert each of these lists of strings (from step 2) into a list of
+3.  Use `map` and `col` to convert each of these lists of strings (from step 2) into a list of
     columns and return the results as a triple (of type `(List[Column], List[Column], List[Column])`).
 
 
