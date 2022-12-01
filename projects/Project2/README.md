@@ -38,7 +38,7 @@ working, etc.).
 Here are the first four lines of the dataset:
 
 ```
-1  tucaseid,gemetsta,gtmetsta,peeduca,pehspnon,ptdtrace,teage,telfs,temjot,teschenr ,teschlvl,tesex,
+1  tucaseid,gemetsta,gtmetsta,peeduca,pehspnon,ptdtrace,teage,telfs,temjot,teschenr,teschlvl,tesex,
    tespempnot,trchildnum,trdpftpt,trernwa,trholiday,trspftpt,trsppres,tryhhchild,tudiaryday,tufnwgtp,
    tehruslt,tuyear, t010101,t010102,t010199,t010201,t010299,t010301,t010399,t010401,t010499,t010501,
    t010599,t019999,t020101,t020102,t020103,t020104,t020199,t020201,t020202,t020203,t020299,t020301,
@@ -159,9 +159,9 @@ file, so we can parse that line to assign names to the columns programmatically.
 
     *Hints*.
     +  Handle the `head` field and `tail` fields separately because the type of the `head`
-       field is special (`StringType`).
+       field is special ([StringType][]).
     +  Define a `val` called, say, `head_field`, using the [StructField][] constructor
-       with arguments `columnNames.head`, `StringType`, and `nullable = false` as arguments.
+       with arguments `columnNames.head`, [StringType][], and `nullable = false` as arguments.
     +  Define `val tail_field` as `columnNames.tail.map(???)`; replace the `???` with an
        anonymous function (e.g., `fld => StructField(fld, ???, ???)`) (Of course, you
        should replace the `???` with the appropriate arguments.)
@@ -257,7 +257,7 @@ whereas in our resulting dataset we want them to be in hours.
 The columns describing the work status, the sex and the age, will contain simplified
 information compared to the initial dataset.
 
-Last, people that are not employable will be ltered out of the resulting dataset.
+Last, people that are not employable will be filtered out of the resulting dataset.
 
 The comment on top of the `timeUsageSummary` method will give you more specific
 information about what is expected in each column.

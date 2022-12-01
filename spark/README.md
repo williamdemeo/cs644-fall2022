@@ -43,3 +43,21 @@ Unzip the file and put it in a folder called `data` inside your spark project.
 ## SparkContext vs SparkSession
 
 https://sparkbyexamples.com/spark/sparksession-vs-sparkcontext/
+
+
+## Packaging up a Spark project to run on a cluster
+
+So far we have only run Spark jobs in the IDE.  We need to learn how to package up and deploy a Spark program so that it can run independently of the IDE, say, on an [AWS EMR][] cluster.
+
+We will use the Scala Build Tool (sbt) to create a jar file containing our Scala program.
+
+In the `project` folder, we need a new file called `assembly.sbt` that contains one line
+
+```scala
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.10")
+```
+
+
+
+
+
