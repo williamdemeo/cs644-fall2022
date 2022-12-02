@@ -287,42 +287,46 @@ active employed people spend to work?
 
 #### Alternative Data Transformation Approach
 
-We can also implement the `timeUsageGrouped` method by using a plain SQL query
-instead of the `DataFrame` API. Note that sometimes using the programmatic API to
-build queries is a lot easier than writing a plain SQL query. If you do not have
-experience with SQL, you might find [these examples](https://en.wikipedia.org/wiki/SQL_syntax#Queries) useful.
+1.  We can also implement the `timeUsageGrouped` method by using a plain SQL query
+    instead of the `DataFrame` API. Note that sometimes using the programmatic API to
+    build queries is a lot easier than writing a plain SQL query. If you do not have
+    experience with SQL, you might find [these examples](https://en.wikipedia.org/wiki/SQL_syntax#Queries) useful.
 
-```scala
-def timeUsageGroupedSqlQuery(viewName: String): String
-```
+    ```scala
+    def timeUsageGroupedSqlQuery(viewName: String): String
+    ```
 
-Can you think of a previous query that would have been a nightmare to write in plain
-SQL?
+    Can you think of a previous query that would have been a nightmare to write in plain SQL?
 
-Finally, in the last part of this assignment we will explore yet another alternative way
-to express queries: using typed [Dataset][]s instead of untyped [DataFrame][]s.
+    *Hints*.
+    *  Keep in mind you simply want to return string describing an SQL query.
+    *  Use "SELECT", "ROUND", "AVG", "FROM", and "GROUP BY".
+    *  Be sure the resulting string conforms exactly to correct SQL syntax (including newline characters, "\n").
 
-```scala
-def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
-```
+2.  Finally, in the last part of this assignment we will explore yet another alternative way to express queries: 
+    using typed [Dataset][]s instead of untyped [DataFrame][]s.
 
-Implement the `timeUsageSummaryTyped` method to convert a [DataFrame][] returned
-by `timeUsageSummary` into a [Dataset][][TimeUsageRow]`. The `TimeUsageRow` is a
-data type that models the content of a row of a summarized dataset. To achieve the
-conversion you might want to use the [getAs][] method of [Row][]. This method retrieves a
-named column of the row and attempts to cast its value to a given type.
+    ```scala
+    def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
+    ```
 
-```scala
-def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow]
-```
+    Implement the `timeUsageSummaryTyped` method to convert a [DataFrame][] returned
+    by `timeUsageSummary` into a [Dataset][][TimeUsageRow]`. The `TimeUsageRow` is a
+    data type that models the content of a row of a summarized dataset. To achieve the
+    conversion you might want to use the [getAs][] method of [Row][]. This method retrieves a
+    named column of the row and attempts to cast its value to a given type.
 
-Then, implement the `timeUsageGroupedTyped` method that performs the same
-query as `timeUsageGrouped` but uses typed APIs as much as possible. Note that not
-all the operations have a typed equivalent. For example, [round][] will return a [Column][]
-that you will have to turn into a [TypedColumn][] by calling .[as][]`[Double]`. 
-Another example is [orderBy][], which also has no typed equivalent. Make sure your
-[Dataset][] has a schema because this operation requires one (column names are generally
-lost when using typed transformations).
+    ```scala
+    def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow]
+    ```
+
+    Then, implement the `timeUsageGroupedTyped` method that performs the same
+    query as `timeUsageGrouped` but uses typed APIs as much as possible. Note that not
+    all the operations have a typed equivalent. For example, [round][] will return a [Column][]
+    that you will have to turn into a [TypedColumn][] by calling .[as][]`[Double]`. 
+    Another example is [orderBy][], which also has no typed equivalent. Make sure your
+    [Dataset][] has a schema because this operation requires one (column names are generally
+    lost when using typed transformations).
 
 ### How to submit
 
