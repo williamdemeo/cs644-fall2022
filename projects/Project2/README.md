@@ -285,48 +285,61 @@ active employed people spend to work?
 
 -----------------
 
-#### Alternative Data Transformation Approach
+#### Alternative to Data Transformation Approach (SQL)
 
-1.  We can also implement the `timeUsageGrouped` method by using a plain SQL query
-    instead of the `DataFrame` API. Note that sometimes using the programmatic API to
-    build queries is a lot easier than writing a plain SQL query. If you do not have
-    experience with SQL, you might find [these examples](https://en.wikipedia.org/wiki/SQL_syntax#Queries) useful.
+We can also implement the `timeUsageGrouped` method by using a plain SQL query
+instead of the `DataFrame` API. Note that sometimes using the programmatic API to
+build queries is a lot easier than writing a plain SQL query. If you do not have
+experience with SQL, you might find [these examples](https://en.wikipedia.org/wiki/SQL_syntax#Queries) useful.
 
-    ```scala
-    def timeUsageGroupedSqlQuery(viewName: String): String
-    ```
+```scala
+def timeUsageGroupedSqlQuery(viewName: String): String
+```
 
-    Can you think of a previous query that would have been a nightmare to write in plain SQL?
+Can you think of a previous query that would have been a nightmare to write in plain SQL?
 
-    *Hints*.
-    *  Keep in mind you simply want to return string describing an SQL query.
-    *  Use "SELECT", "ROUND", "AVG", "FROM", and "GROUP BY".
-    *  Be sure the resulting string conforms exactly to correct SQL syntax (including newline characters, "\n").
+*Hints*.  
+*  Keep in mind you simply want to return string describing an SQL query.
+*  Use "SELECT", "ROUND", "AVG", "FROM", and "GROUP BY".
+*  Be sure the resulting string conforms exactly to correct SQL syntax (including newline characters, "\n").
 
-2.  Finally, in the last part of this assignment we will explore yet another alternative way to express queries: 
-    using typed [Dataset][]s instead of untyped [DataFrame][]s.
+--------------------------
 
-    ```scala
-    def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
-    ```
+#### Alternative Data Transformation Approach (Datasets)
 
-    Implement the `timeUsageSummaryTyped` method to convert a [DataFrame][] returned
-    by `timeUsageSummary` into a [Dataset][][TimeUsageRow]`. The `TimeUsageRow` is a
-    data type that models the content of a row of a summarized dataset. To achieve the
-    conversion you might want to use the [getAs][] method of [Row][]. This method retrieves a
-    named column of the row and attempts to cast its value to a given type.
+In the last part of this project we explore yet another way to express queries: 
+using (typed) [Dataset][]s instead of (untyped) [DataFrame][]s.
 
-    ```scala
-    def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow]
-    ```
+The `TimeUsageRow` type models the content of a row of a summarized dataset. 
 
-    Then, implement the `timeUsageGroupedTyped` method that performs the same
-    query as `timeUsageGrouped` but uses typed APIs as much as possible. Note that not
-    all the operations have a typed equivalent. For example, [round][] will return a [Column][]
-    that you will have to turn into a [TypedColumn][] by calling .[as][]`[Double]`. 
-    Another example is [orderBy][], which also has no typed equivalent. Make sure your
-    [Dataset][] has a schema because this operation requires one (column names are generally
-    lost when using typed transformations).
+Implement the `timeUsageSummaryTyped` method to convert a [DataFrame][] returned
+by `timeUsageSummary` into a [Dataset][][TimeUsageRow]. 
+
+```scala
+def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
+```
+
+*Hints*.  
+*  To achieve the conversion consider using [Row][]'s [getAs][] method which retrieves a named column of the row and attempts to cast its value to a given type.
+
+
+
+Finally, implement the `timeUsageGroupedTyped` method which performs the same query as `timeUsageGrouped` but uses typed APIs as much as possible.
+    
+```scala
+def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow]
+```
+
+*Hints*.
+
+*  Not all operations have a typed equivalent. For example, [round][] will return a [Column][]
+   that you will have to turn into a [TypedColumn][] by calling .[as][]`[Double]`. Another example 
+   is [orderBy][], which also has no typed equivalent. 
+
+*  Make sure your [Dataset][] has a schema because this operation requires one. (Column names are generally
+   lost when using typed transformations.)
+
+--------------------
 
 ### How to submit
 
