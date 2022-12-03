@@ -279,9 +279,9 @@ def timeUsageGrouped(summed: DataFrame): DataFrame
 ```
 
 Now you can run the project and see what the final `DataFrame` contains. What do you
-see when you compare elderly men versus elderly women's time usage? How much
-time elder people allocate to leisure compared to active people? How much time do
-active employed people spend to work?
+see when you compare elderly men versus elderly women's time usage? Compared to active people, how much
+time do elderly people allocate to leisure activities? How much time do
+active employed people spend on work activities?
 
 -----------------
 
@@ -296,12 +296,14 @@ experience with SQL, you might find [these examples](https://en.wikipedia.org/wi
 def timeUsageGroupedSqlQuery(viewName: String): String
 ```
 
-Can you think of a previous query that would have been a nightmare to write in plain SQL?
-
 *Hints*.  
 *  Keep in mind you simply want to return string describing an SQL query.
 *  Use "SELECT", "ROUND", "AVG", "FROM", and "GROUP BY".
 *  Be sure the resulting string conforms exactly to correct SQL syntax (including newline characters, "\n").
+
+Before moving on, take a moment to think about the queries above.  Try to think of a query we have seen 
+that would have been very challenging to write in plain SQL. 
+
 
 --------------------------
 
@@ -319,8 +321,7 @@ by `timeUsageSummary` into a [Dataset][][TimeUsageRow].
 def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
 ```
 
-*Hints*.  
-*  To achieve the conversion consider using [Row][]'s [getAs][] method which retrieves a named column of the row and attempts to cast its value to a given type.
+*Hints*. To achieve the conversion consider using [Row][]'s [getAs][] method which retrieves a named column of the row and attempts to cast its value to a given type.
 
 
 

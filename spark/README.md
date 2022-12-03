@@ -49,7 +49,7 @@ https://sparkbyexamples.com/spark/sparksession-vs-sparkcontext/
 
 So far we have only run Spark jobs in the IDE.  We need to learn how to package up and deploy a Spark program so that it can run independently of the IDE, say, on an [AWS EMR][] cluster.
 
-We will use the Scala Build Tool (sbt) to create a jar file containing our Scala program.
+We will use the [Scala Build Tool][] ([sbt][]) to create a jar file containing our Scala program.
 
 In the `project` folder, we need a new file called `assembly.sbt` that contains one line
 
@@ -58,6 +58,10 @@ addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.10")
 ```
 
 
+[AWS EMR]: https://aws.amazon.com/emr/
 
 
 
+[Scala Build Tool]: https://www.scala-sbt.org/
+
+[sbt]: https://www.scala-sbt.org/
