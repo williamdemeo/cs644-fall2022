@@ -57,6 +57,9 @@ In the `project` folder, we need a new file called `assembly.sbt` that contains 
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.10")
 ```
 
+### A small example
+
+Download [sbt.zip](https://github.com/williamdemeo/cs644-fall2022/find/main).
 
 [AWS EMR]: https://aws.amazon.com/emr/
 
