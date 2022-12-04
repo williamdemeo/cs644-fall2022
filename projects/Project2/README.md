@@ -321,7 +321,16 @@ by `timeUsageSummary` into a [Dataset][][TimeUsageRow].
 def timeUsageSummaryTyped(timeUsageSummaryDf: DataFrame): Dataset[TimeUsageRow]
 ```
 
-*Hints*. To achieve the conversion consider using [Row][]'s [getAs][] method which retrieves a named column of the row and attempts to cast its value to a given type.
+*Hints*.  
+1. As usual, you convert a collection using the `map` method.
+2. To achieve the conversion consider using [Row][]'s [getAs][] method which 
+   retrieves a named column of the row and attempts to cast its value to a given type.
+   
+The `timeUsageSummaryTyped` function can be implemented in one line with the following form:
+
+```scala
+timeUsageSummaryDF.map { row => TimeUsageRow(???, ???, ???, ???, ???, ???) }
+```
 
 
 
