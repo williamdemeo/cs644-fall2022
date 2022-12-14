@@ -31,14 +31,19 @@ This section only applies to users of Windows.  You do not need to follow these 
     
     c.  Create a new environment variable (enter "environment variables" in the Windows search bar, click on "Add Environment Variables," and add a new system variable) named `HADOOP_HOME` with a value of `C:\Hadoop`.  Select the `PATH` environment variable, and `APPEND` a new entry, separated by a semi-colon, of `%HADOOP_HOME%\bin`. Restart IntelliJ to make sure the new environment variables are loaded.
 
+-----------------
 
 ## Getting Data
 
-Please download the Movie Lens dataset `ml-100k.zip` from the following url:
+The Movie Lens datasets `ml-100k.zip` and `ml-1m.zip` (and many others) can be downloaded from the following url:
 
-https://files.grouplens.org/datasets/movielens/ml-100k.zip
+https://files.grouplens.org/datasets/movielens/
 
-Unzip the file and put it in a folder called `data` inside your spark project.
+Another excellent source of datasets is [Kaggle](https://www.kaggle.com/datasets/).
+
+For example, the [American time use survey data](https://www.kaggle.com/datasets/bls/american-time-use-survey) used in Project 2 is available on Kaggle.
+
+------------------------
 
 ## SparkContext vs SparkSession
 
@@ -182,6 +187,46 @@ Ferris Bueller's Day Off (1986)	score: 0.9705811698208009	strength: 1073
 Godfather: Part II, The (1974)	score: 0.9704073574007531	strength: 1246
 Terminator 2: Judgment Day (1991)	score: 0.9703674024729073	strength: 1889
 E.T. the Extra-Terrestrial (1982)	score: 0.9702456868065551	strength: 1714
+```
+
+## Running your standalone Spark program in the cloud
+
+ssh -i ~/aws_id_rsa.pem hadoop@ec2-54-219-61-238.us-west-1.compute.amazonaws.com
+
+
+```
+$ ssh -i ~/.ssh/aws_id_rsa.pem hadoop@ec2-54-219-61-238.us-west-1.compute.amazonaws.com
+Warning: Identity file /home/williamdemeo/aws_id_rsa.pem not accessible: No such file or directory.
+The authenticity of host 'ec2-54-219-61-238.us-west-1.compute.amazonaws.com (54.219.61.238)' can't be established.
+ED25519 key fingerprint is SHA256:crH3DmHJuyqTCh9DvCpMPiTCod6bv+V4CbFogOSKgs0.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-54-219-61-238.us-west-1.compute.amazonaws.com' (ED25519) to the list of known hosts.
+Last login: Wed Dec 14 04:48:35 2022
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+24 package(s) needed for security, out of 46 available
+Run "sudo yum update" to apply all updates.
+                                                                    
+EEEEEEEEEEEEEEEEEEEE MMMMMMMM           MMMMMMMM RRRRRRRRRRRRRRR    
+E::::::::::::::::::E M:::::::M         M:::::::M R::::::::::::::R   
+EE:::::EEEEEEEEE:::E M::::::::M       M::::::::M R:::::RRRRRR:::::R 
+  E::::E       EEEEE M:::::::::M     M:::::::::M RR::::R      R::::R
+  E::::E             M::::::M:::M   M:::M::::::M   R:::R      R::::R
+  E:::::EEEEEEEEEE   M:::::M M:::M M:::M M:::::M   R:::RRRRRR:::::R 
+  E::::::::::::::E   M:::::M  M:::M:::M  M:::::M   R:::::::::::RR   
+  E:::::EEEEEEEEEE   M:::::M   M:::::M   M:::::M   R:::RRRRRR::::R  
+  E::::E             M:::::M    M:::M    M:::::M   R:::R      R::::R
+  E::::E       EEEEE M:::::M     MMM     M:::::M   R:::R      R::::R
+EE:::::EEEEEEEE::::E M:::::M             M:::::M   R:::R      R::::R
+E::::::::::::::::::E M:::::M             M:::::M RR::::R      R::::R
+EEEEEEEEEEEEEEEEEEEE MMMMMMM             MMMMMMM RRRRRRR      RRRRRR
+                                                                    
+[hadoop@ip-172-31-27-212 ~]$ 
 ```
 
 
