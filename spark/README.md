@@ -57,7 +57,7 @@ In the `project` folder, we need a new file called `assembly.sbt` that contains 
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.10")
 ```
 
-### A small example
+### Example: building a complete stand-alone Spark program
 
 #### Prelimiary setup: building the jar file
 
@@ -70,29 +70,29 @@ This consists of
    and a `src/main/scala` directory where our Scala source code resides.
    (We'll call our project `movie-similarity`.)
 *  We will also need a special sbt file called `assembly.sbt` which will enable us to 
-   build our program into a jar file, called `MovieSimilarity.jar`.
+   build our program into a jar file, called `MovieSimilarity-assembly-1.0.jar`.
 
-The `MovieSimilarity.jar` file contains everything we need in order to launch our Spark 
+The `MovieSimilarity-assembly-1.0.jar` file contains everything we need in order to launch our Spark 
 program from the command line on a remote server that has Spark installed (e.g., an AWS EMR cluster)
-by simply invoking the command `spark-submit MovieSimilarity.jar`.
+by simply invoking the command `spark-submit MovieSimilarity-assembly-1.0.jar`.
 
 Fortunately, I have already put all the files mentioned above into a zip file to make the setup easy for you. 
 
-1.  Download the [movie-similarity.zip](https://github.com/williamdemeo/cs644-fall2022/find/main) file and extract it on your machine.
+1.  Download the [movie-similarity.zip](https://github.com/williamdemeo/cs644-fall2022/raw/main/spark/movie-similarity.zip) file and extract it on your machine.
 
-2.  To build the `MovieSimilarity.jar` file, 
+2.  To build the `MovieSimilarity-assembly-1.0.jar` file, 
     +  download and install the [Scala build tool (sbt)](https://www.scala-sbt.org/download.html),
     +  open a terminal, change to the movie-similarity project directory, and invoke the command `sbt assembly`.
 
-       ```sh
+       ```shell
        cd /home/your-user-name/movie-similarity
        sbt assembly
        ```
 
-    This should create a file called `MovieSimilarity.jar` inside the `target/scala-2.12` subdirectory 
+    This should create a file called `MovieSimilarity-assembly-1.0.jar` inside the `target/scala-2.12` subdirectory 
     of the main `movie-similarity` project directory. Move this newly created file up to the main project directory.
 
-    ```sh
+    ```shell
     mv target/scala-2.12/MovieSimilarity.jar
     ```
 
@@ -114,19 +114,19 @@ Fortunately, I have already put all the files mentioned above into a zip file to
     file on that page.)
 
     Unzip the ml-1m.zip file and put the `movies.dat` and `ratings.dat` files in the same directory as you put 
-    the `MovieSimilarity.jar` file in step 1 above (e.g., the main project directory). (It doesn't really matter where you put
+    the `MovieSimilarity-assembly-1.0.jar` file in step 1 above (e.g., the main project directory). (It doesn't really matter where you put
     the files, as long as all three of them are in the same directory.)
 
 5.  Test the Spark program by invoking the following command (in a terminal window from the directory containing 
-    the three files `MovieSimilarity.jar`, `movies.dat`, `ratings.dat`):
+    the three files `MovieSimilarity-assembly-1.0.jar`, `movies.dat`, `ratings.dat`):
     
-    ```sh
+    ```shell
     ~/spark-2.4.8-bin-hadoop2.7/bin/spark-submit --executor-memory 1g MovieSimilarity-assembly-1.0.jar 260
     ```
     
 If the job is successful, you should see something like the following in the terminal window:
 
-```sh
+```
 22/12/13 22:26:53 WARN Utils: Your hostname, lampe resolves to a loopback address: 127.0.1.1; using 192.168.1.76 instead (on interface wlp2s0)
 22/12/13 22:26:53 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
 WARNING: An illegal reflective access operation has occurred
@@ -142,7 +142,7 @@ Loading movie names...
 
 Then Spark will compute for about 5 or 10 minutes, after which time you should see the following output.
 
-```sh
+```
 Top 50 similar movies for Star Wars: Episode IV - A New Hope (1977)
 Star Wars: Episode V - The Empire Strikes Back (1980)	score: 0.9897917106566659	strength: 2355
 Raiders of the Lost Ark (1981)	score: 0.9855548278565054	strength: 1972
