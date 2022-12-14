@@ -103,7 +103,7 @@ Fortunately, I have already put all the files mentioned above into a zip file to
 
 3.  If you look in the `build.sbt` file, you will see that the version of Spark on which we want to run
     our program is **version 2.4.8**. The reason for this is that we happen to know 2.4.8 is the version 
-    of Spark that's available on AWS. So, to test our `MovieSimilarity.jar` file, we need to download 
+    of Spark that's available on AWS. So, to test our `MovieSimilarity-assembly-1.0.jar` file, we need to download 
     [Spark version 2.4.8](https://archive.apache.org/dist/spark/spark-2.4.8/spark-2.4.8-bin-hadoop2.7.tgz) 
     from [here](https://archive.apache.org/dist/spark/spark-2.4.8/spark-2.4.8-bin-hadoop2.7.tgz).
     
