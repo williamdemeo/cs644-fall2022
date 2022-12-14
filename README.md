@@ -113,12 +113,15 @@ The [Gradescope][] pages for this class are the following:
 **All exams take place in the same classroom as the lecture**.
 
 +  **MIDTERM EXAM**  
-   **Topics**. TBA  
-   **DATE**. TBA
+   +  [§ 101 (Wednesday) Canvas](https://njit.instructure.com/courses/25281) **9 November 2022, 6--8:30pm ECEC 100**
+   +  [§ 103 (Saturday AM) Canvas](https://njit.instructure.com/courses/25680) **11 November 2022, 9--11:30pm CBK 124**
+   +  [§ 105 (Saturday PM) Canvas](https://njit.instructure.com/courses/25681) **11 November 2022, 1--3:30pm CBK 124**
+
   
 +  **FINAL EXAM** (cumulative)  
-   **DATE**. TBA  
-   **TIME**. TBA  
+   +  [§ 101 (Wednesday) Canvas](https://njit.instructure.com/courses/25281) **21 December 2022, 6--8:30pm ECEC 100**
+   +  [§ 103 (Saturday AM) Canvas](https://njit.instructure.com/courses/25680) **17 December 2022, 9--11:30pm CBK 124**
+   +  [§ 105 (Saturday PM) Canvas](https://njit.instructure.com/courses/25681) **17 December 2022, 1--3:30pm CBK 124**
 
 In accordance with university policy, **the final exam must be taken by all students at the scheduled time in the usual classroom.** *Do not make plans which would have you depart campus before the scheduled final exam date.*
 
