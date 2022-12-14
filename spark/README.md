@@ -65,12 +65,12 @@ Let's set up a Spark project in the usual way.
 
 This consists of 
 
-a.  Creating a new project directory.
-b.  Setting up the standard Spark project structure, including at least a `build.sbt` file
-    and a `src/main/scala` directory where our Scala source code resides.
-    (We'll call our project `movie-similarity`.)
-c.  We will also need a special sbt file called `assembly.sbt` which will enable us to 
-    build our program into a jar file, called `MovieSimilarity.jar`.
+*  Creating a new project directory.
+*  Setting up the standard Spark project structure, including at least a `build.sbt` file
+   and a `src/main/scala` directory where our Scala source code resides.
+   (We'll call our project `movie-similarity`.)
+*  We will also need a special sbt file called `assembly.sbt` which will enable us to 
+   build our program into a jar file, called `MovieSimilarity.jar`.
 
 The `MovieSimilarity.jar` file contains everything we need in order to launch our Spark 
 program from the command line on a remote server that has Spark installed (e.g., an AWS EMR cluster)
