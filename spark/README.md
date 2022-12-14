@@ -59,6 +59,11 @@ addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.10")
 
 ### Example: building a complete stand-alone Spark program
 
+This example describes the steps required to build a stand-alone Spark program on a Linux machine.
+If you're not using Linux, don't worry.  It shouldn't be too hard to read through the
+example and figure out what analogous steps to follow on your architecture, and if you get stuck, ple
+you can post a question on Slack.
+
 #### Prelimiary setup: building the jar file
 
 Let's set up a Spark project in the usual way.
@@ -93,7 +98,7 @@ Fortunately, I have already put all the files mentioned above into a zip file to
     of the main `movie-similarity` project directory. Move this newly created file up to the main project directory.
 
     ```shell
-    mv target/scala-2.12/MovieSimilarity.jar
+    mv /home/your-user-name/movie-similarity/{target/scala-2.12/,}MovieSimilarity-assembly-1.0.jar
     ```
 
 3.  If you look in the `build.sbt` file, you will see that the version of Spark on which we want to run
