@@ -191,6 +191,23 @@ E.T. the Extra-Terrestrial (1982)	score: 0.9702456868065551	strength: 1714
 
 ## Running your standalone Spark program in the cloud
 
+### Sign up for an AWS account
+
+
+https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-ssh-prereqs.html
+
+
+By default, Spark on an EMR cluster is configured to load data files from the
+`/user/hadoop/` directory on the master cluster, so we need to create that directory
+and place `movies.dat` and `ratings.dat` in there.
+
+```
+mkdir /user/hadoop
+cp movies.dat ratings.dat
+the master cluster (e.g., `hdfs://ip-172-31-27-212.us-west-1.compute.internal:8020/user/hadoop/`
+
+
+
 ssh -i ~/aws_id_rsa.pem hadoop@ec2-54-219-61-238.us-west-1.compute.amazonaws.com
 
 
